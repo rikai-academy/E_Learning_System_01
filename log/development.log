@@ -243,3 +243,277 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 29ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3344)
 
 
+Started GET "/" for ::1 at 2021-07-29 11:16:28 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.4ms | Allocations: 334)
+Completed 200 OK in 23ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 2815)
+
+
+Started GET "/" for ::1 at 2021-07-29 11:19:47 +0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 634.8ms | Allocations: 132042)
+  Rendered layout layouts/application.html.erb (Duration: 635.8ms | Allocations: 132132)
+Completed 500 Internal Server Error in 658ms (ActiveRecord: 0.0ms | Allocations: 135091)
+
+
+  
+ActionView::Template::Error (The asset "sec1_s5_big.jpg" is not present in the asset pipeline.
+):
+    46: 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    47: 					<div class="ed_mostrecomeded_course">
+    48: 						<div class="ed_item_img">							
+    49:               <%= image_tag "sec1_s5_big.jpg", class: "img-responsive" %>
+    50: 						</div>
+    51: 						<div class="ed_item_description ed_most_recomended_data">
+    52: 							<h4><a href="course_single.html">Project Learning </a><span>£25</span></h4>
+  
+app/views/static_pages/home.html.erb:49
+Started GET "/" for ::1 at 2021-07-29 11:20:24 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 421.6ms | Allocations: 159340)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/OS/Desktop/RIKAI TECHNOLOGY/Project1/E_Learning_System_01/public/packs
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 1112ms
+Built at: 07/29/2021 11:20:29 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 150)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 161)
+  Rendered layout layouts/application.html.erb (Duration: 4664.2ms | Allocations: 192297)
+Completed 200 OK in 4667ms (Views: 4666.0ms | ActiveRecord: 0.0ms | Allocations: 192801)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:20:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 11:21:36 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.5ms | Allocations: 7265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 486.5ms | Allocations: 142905)
+Completed 200 OK in 491ms (Views: 490.6ms | ActiveRecord: 0.0ms | Allocations: 143398)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:21:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 11:22:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 11.5ms | Allocations: 8101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 148)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 103.7ms | Allocations: 31400)
+Completed 200 OK in 110ms (Views: 108.6ms | ActiveRecord: 0.0ms | Allocations: 32653)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:22:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 11:24:28 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.4ms | Allocations: 8101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 151)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 74.1ms | Allocations: 31393)
+Completed 200 OK in 82ms (Views: 80.0ms | ActiveRecord: 0.0ms | Allocations: 32637)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:24:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 11:28:36 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 15.1ms | Allocations: 7264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 113.2ms | Allocations: 29770)
+Completed 200 OK in 118ms (Views: 117.1ms | Allocations: 30261)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:28:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 11:30:03 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 15.2ms | Allocations: 7265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 552.1ms | Allocations: 166093)
+Completed 200 OK in 554ms (Views: 553.6ms | Allocations: 166583)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:30:04 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 11:31:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.8ms | Allocations: 7263)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 90.0ms | Allocations: 30027)
+Completed 200 OK in 93ms (Views: 92.6ms | Allocations: 30516)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:31:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 11:32:12 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.3ms | Allocations: 7264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 81.8ms | Allocations: 30027)
+Completed 200 OK in 86ms (Views: 85.7ms | Allocations: 30516)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:32:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 11:33:05 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.7ms | Allocations: 7265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 85.8ms | Allocations: 30028)
+Completed 200 OK in 88ms (Views: 87.1ms | Allocations: 30523)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:33:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 11:33:08 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.8ms | Allocations: 7264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 81.1ms | Allocations: 30027)
+Completed 200 OK in 83ms (Views: 82.4ms | Allocations: 30522)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:33:08 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 11:38:24 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 243.6ms | Allocations: 93816)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 324.6ms | Allocations: 117897)
+Completed 200 OK in 344ms (Views: 330.8ms | ActiveRecord: 0.0ms | Allocations: 120929)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:38:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/en" for ::1 at 2021-07-29 11:38:30 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.3ms | Allocations: 7287)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 77.5ms | Allocations: 30359)
+Completed 200 OK in 84ms (Views: 82.0ms | ActiveRecord: 0.0ms | Allocations: 31376)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:38:30 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/en" for ::1 at 2021-07-29 11:41:11 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.8ms | Allocations: 8119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 155)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 107.6ms | Allocations: 31760)
+Completed 200 OK in 115ms (Views: 113.0ms | ActiveRecord: 0.0ms | Allocations: 33091)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:41:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/en" for ::1 at 2021-07-29 11:41:48 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.3ms | Allocations: 7270)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 84.4ms | Allocations: 30121)
+Completed 200 OK in 88ms (Views: 87.5ms | ActiveRecord: 0.0ms | Allocations: 30635)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 11:41:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
