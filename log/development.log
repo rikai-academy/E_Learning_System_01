@@ -243,3 +243,3548 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 29ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3344)
 
 
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE DATABASE `elearning` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE DATABASE `E_Learning_System_01_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('3130052965522379190', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('3130052965522379190')[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2021-07-28 15:29:59 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.4ms | Allocations: 355)
+Completed 200 OK in 27ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 2753)
+
+
+Started GET "/" for ::1 at 2021-07-28 15:29:59 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.9ms | Allocations: 224)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 945)
+
+
+Started GET "/" for ::1 at 2021-07-28 15:36:44 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 45)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 412)
+
+
+Started GET "/" for ::1 at 2021-07-28 15:36:44 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 45)
+Completed 200 OK in 5ms (Views: 3.8ms | Allocations: 411)
+
+
+Started GET "/" for ::1 at 2021-07-28 15:41:03 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 242)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:\Ruby26-x64\bin\ruby.exe: No such file or directory -- ./bin/webpack (LoadError)
+
+  Rendered layout layouts/application.html.erb (Duration: 276.4ms | Allocations: 24110)
+Completed 500 Internal Server Error in 294ms (ActiveRecord: 0.0ms | Allocations: 26958)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/OS/Desktop/RIKAI TECHNOLOGY/Project1/E_Learning_System_01/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-07-28 15:57:30 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 242)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:\Ruby26-x64\bin\ruby.exe: No such file or directory -- ./bin/webpack (LoadError)
+
+  Rendered layout layouts/application.html.erb (Duration: 253.9ms | Allocations: 25250)
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.0ms | Allocations: 28098)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in C:/Users/OS/Desktop/RIKAI TECHNOLOGY/Project1/E_Learning_System_01/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-07-28 15:59:31 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 242)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/OS/Desktop/RIKAI TECHNOLOGY/Project1/E_Learning_System_01/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 1872ms
+Built at: 07/28/2021 3:59:36 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4791.1ms | Allocations: 12758)
+Completed 500 Internal Server Error in 4810ms (ActiveRecord: 0.0ms | Allocations: 15606)
+
+
+  
+ActionView::Template::Error (Missing partial static_pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/OS/Desktop/RIKAI TECHNOLOGY/Project1/E_Learning_System_01/app/views"
+  * "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actiontext-6.1.4/app/views"
+  * "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionmailbox-6.1.4/app/views"
+):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:     <%= render "header" %>
+    15:     <div class ="container">
+    16:       <%= yield %>
+    17:     </div>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2021-07-28 16:00:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 6020)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms | Allocations: 7208)
+
+
+  
+ActionView::Template::Error (Missing partial layout/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/OS/Desktop/RIKAI TECHNOLOGY/Project1/E_Learning_System_01/app/views"
+  * "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actiontext-6.1.4/app/views"
+  * "C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/actionmailbox-6.1.4/app/views"
+):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:     <%= render "layout/header" %>
+    15:     <div class ="container">
+    16:       <%= yield %>
+    17:     </div>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2021-07-28 16:00:26 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 6.9ms | Allocations: 3492)
+  Rendered layout layouts/application.html.erb (Duration: 63.7ms | Allocations: 8545)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms | Allocations: 9712)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_path' for #<ActionView::Base:0x0002a402ecfab0>):
+    15:             </div>
+    16:             <ul class="nav navbar-nav navbar-right  collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    17:                 <li><%= link_to "Home", root_path %></li>            
+    18:                 <li><%= link_to "Users", users_path %></li>             
+    19:             </ul>
+    20:         </nav>
+    21:     </div>
+  
+app/views/layouts/_header.html.erb:18
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2021-07-28 16:00:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 1143)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 6197)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms | Allocations: 7369)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <%= link_to "E Learning", root_path, id: "logo" %>
+        <nav>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul class="nav navbar-nav navbar-right  collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <li><%= link_to "Home", # %></li>            
+                <li><%= link_to "Users", # %></li>             
+            </ul>
+        </nav>
+    </div>
+</header>
+):
+1:    <header class="navbar navbar-fixed-top navbar-inverse">
+2:        <div class="container">
+3:            <%= link_to "E Learning", root_path, id: "logo" %>
+4:            <nav>
+5:                <div class="navbar-header">
+6:                    <button type="button" class="navbar-toggle collapsed"
+7:                        data-toggle="collapse"
+8:                        data-target="#bs-example-navbar-collapse-1"
+9:                        aria-expanded="false">
+10:                        <span class="sr-only">Toggle navigation</span>
+11:                        <span class="icon-bar"></span>
+12:                        <span class="icon-bar"></span>
+13:                        <span class="icon-bar"></span>
+14:                    </button>
+15:                </div>
+16:                <ul class="nav navbar-nav navbar-right  collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+17:                    <li><%= link_to "Home", # %></li>            
+18:                    <li><%= link_to "Users", # %></li>             
+19:                </ul>
+20:            </nav>
+21:        </div>
+22:    </header>
+  
+app/views/layouts/_header.html.erb:18: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:19: unknown regexp option - l
+app/views/layouts/_header.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:21: unknown regexp options - dv
+app/views/layouts/_header.html.erb:22: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:24: unterminated regexp meets end of file
+app/views/layouts/_header.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_header.html.erb:18: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:19: unknown regexp option - l
+app/views/layouts/_header.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:21: unknown regexp options - dv
+app/views/layouts/_header.html.erb:22: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:24: unterminated regexp meets end of file
+app/views/layouts/_header.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_header.html.erb:18: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:19: unknown regexp option - l
+app/views/layouts/_header.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:21: unknown regexp options - dv
+app/views/layouts/_header.html.erb:22: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:24: unterminated regexp meets end of file
+app/views/layouts/_header.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_header.html.erb:18: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:19: unknown regexp option - l
+app/views/layouts/_header.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:21: unknown regexp options - dv
+app/views/layouts/_header.html.erb:22: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:24: unterminated regexp meets end of file
+app/views/layouts/_header.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_header.html.erb:18: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:19: unknown regexp option - l
+app/views/layouts/_header.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:21: unknown regexp options - dv
+app/views/layouts/_header.html.erb:22: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:24: unterminated regexp meets end of file
+app/views/layouts/_header.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_header.html.erb:18: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:19: unknown regexp option - l
+app/views/layouts/_header.html.erb:20: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:21: unknown regexp options - dv
+app/views/layouts/_header.html.erb:22: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:24: unterminated regexp meets end of file
+app/views/layouts/_header.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2021-07-28 16:01:15 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 248)
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 5300)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.0ms | Allocations: 6502)
+
+
+Started GET "/" for ::1 at 2021-07-28 16:03:26 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 546.6ms | Allocations: 68656)
+Completed 200 OK in 548ms (Views: 547.7ms | ActiveRecord: 0.0ms | Allocations: 69152)
+
+
+Started GET "/" for ::1 at 2021-07-28 16:04:28 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 327.1ms | Allocations: 82224)
+Completed 200 OK in 328ms (Views: 327.8ms | ActiveRecord: 0.0ms | Allocations: 82715)
+
+
+Started GET "/" for ::1 at 2021-07-28 16:05:32 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 340.1ms | Allocations: 101633)
+Completed 200 OK in 341ms (Views: 341.0ms | Allocations: 102124)
+
+
+Started GET "/" for ::1 at 2021-07-28 16:05:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered layout layouts/application.html.erb (Duration: 370.3ms | Allocations: 120479)
+Completed 200 OK in 371ms (Views: 371.0ms | Allocations: 120973)
+
+
+Started GET "/" for ::1 at 2021-07-28 16:51:52 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 497.0ms | Allocations: 121783)
+Completed 200 OK in 512ms (Views: 502.5ms | Allocations: 123028)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:51:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:53:23 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 168)
+  Rendered layout layouts/application.html.erb (Duration: 74.1ms | Allocations: 20829)
+Completed 200 OK in 80ms (Views: 78.7ms | Allocations: 22078)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:53:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:53:25 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 71.9ms | Allocations: 20263)
+Completed 200 OK in 74ms (Views: 73.1ms | Allocations: 20755)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:53:25 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:54:28 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 374.5ms | Allocations: 121212)
+Completed 200 OK in 376ms (Views: 375.7ms | Allocations: 121703)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:54:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:56:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 369.7ms | Allocations: 120064)
+Completed 200 OK in 372ms (Views: 371.1ms | Allocations: 120555)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:41 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:56:45 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 68.6ms | Allocations: 20263)
+Completed 200 OK in 70ms (Views: 69.9ms | Allocations: 20760)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:56:46 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 72.8ms | Allocations: 20260)
+Completed 200 OK in 75ms (Views: 74.1ms | Allocations: 20757)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:46 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:47 +0700
+Started GET "/" for ::1 at 2021-07-28 16:56:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 102.8ms | Allocations: 32747)
+Completed 200 OK in 108ms (Views: 107.1ms | Allocations: 36604)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:56:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 67.7ms | Allocations: 20260)
+Completed 200 OK in 70ms (Views: 69.1ms | Allocations: 20789)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:56:48 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 76.3ms | Allocations: 20260)
+Completed 200 OK in 78ms (Views: 77.7ms | Allocations: 20757)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:49 +0700
+Started GET "/" for ::1 at 2021-07-28 16:56:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 113.2ms | Allocations: 37083)
+Completed 200 OK in 115ms (Views: 114.5ms | Allocations: 37580)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:50 +0700
+Started GET "/" for ::1 at 2021-07-28 16:56:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 98.2ms | Allocations: 36674)
+Completed 200 OK in 100ms (Views: 99.8ms | Allocations: 37256)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:51 +0700
+Started GET "/" for ::1 at 2021-07-28 16:56:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 108.2ms | Allocations: 37177)
+Completed 200 OK in 110ms (Views: 109.7ms | Allocations: 37675)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:56:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:57:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 376.2ms | Allocations: 120683)
+Completed 200 OK in 380ms (Views: 377.7ms | Allocations: 121174)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:57:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:57:55 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 70.5ms | Allocations: 20314)
+Completed 200 OK in 72ms (Views: 71.8ms | Allocations: 20811)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:57:55 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:57:57 +0700
+Started GET "/" for ::1 at 2021-07-28 16:57:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 115.3ms | Allocations: 38574)
+Completed 200 OK in 117ms (Views: 116.7ms | Allocations: 39339)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:57:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:57:58 +0700
+Started GET "/" for ::1 at 2021-07-28 16:57:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 98.6ms | Allocations: 40067)
+Completed 200 OK in 100ms (Views: 99.9ms | Allocations: 40566)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:57:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:58:30 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 385.7ms | Allocations: 120618)
+Completed 200 OK in 387ms (Views: 386.9ms | Allocations: 121109)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:58:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 16:58:33 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 20260)
+Completed 200 OK in 68ms (Views: 67.1ms | Allocations: 20757)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:58:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:58:34 +0700
+Started GET "/" for ::1 at 2021-07-28 16:58:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 109.8ms | Allocations: 37136)
+Completed 200 OK in 111ms (Views: 110.8ms | Allocations: 37633)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:58:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:58:35 +0700
+Started GET "/" for ::1 at 2021-07-28 16:58:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 99.6ms | Allocations: 40023)
+Completed 200 OK in 102ms (Views: 101.1ms | Allocations: 40526)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:58:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:58:36 +0700
+Started GET "/" for ::1 at 2021-07-28 16:58:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 106.7ms | Allocations: 37333)
+Completed 200 OK in 111ms (Views: 110.7ms | Allocations: 38224)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 16:58:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 17:00:37 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 367.6ms | Allocations: 120913)
+Completed 200 OK in 374ms (Views: 372.3ms | Allocations: 122158)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 17:00:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 17:00:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 74.3ms | Allocations: 20814)
+Completed 200 OK in 80ms (Views: 78.8ms | Allocations: 22059)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 17:00:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 17:04:58 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 156)
+  Rendered layout layouts/application.html.erb (Duration: 398.9ms | Allocations: 121354)
+Completed 200 OK in 407ms (Views: 405.2ms | Allocations: 122599)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 17:04:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 19:34:37 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 89.8ms | Allocations: 20306)
+Completed 200 OK in 95ms (Views: 93.6ms | Allocations: 20798)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 19:34:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 19:49:18 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 485.6ms | Allocations: 121354)
+Completed 200 OK in 492ms (Views: 490.6ms | Allocations: 122599)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 19:49:18 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 19:50:15 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 73.6ms | Allocations: 20815)
+Completed 200 OK in 82ms (Views: 79.6ms | Allocations: 22060)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 19:50:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 19:51:39 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 212)
+  Rendered layout layouts/application.html.erb (Duration: 145.3ms | Allocations: 77091)
+Completed 200 OK in 152ms (Views: 149.8ms | Allocations: 78336)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 19:51:40 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 19:51:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 5303)
+Completed 200 OK in 42ms (Views: 41.8ms | Allocations: 5801)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 19:51:44 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 19:53:32 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 182)
+  Rendered layout layouts/application.html.erb (Duration: 127.7ms | Allocations: 58896)
+Completed 200 OK in 135ms (Views: 133.3ms | Allocations: 60141)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 19:53:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 19:54:25 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 5049)
+Completed 200 OK in 57ms (Views: 57.0ms | Allocations: 5541)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 19:54:25 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 19:54:56 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 160.0ms | Allocations: 40259)
+Completed 200 OK in 161ms (Views: 161.0ms | Allocations: 40750)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 19:54:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 19:55:00 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 4879)
+Completed 200 OK in 39ms (Views: 38.9ms | Allocations: 5370)
+
+
+Started GET "/images/header/Logo.png" for ::1 at 2021-07-28 19:55:00 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/header/Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 19:57:59 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 5453)
+Completed 200 OK in 56ms (Views: 54.4ms | Allocations: 6698)
+
+
+Started GET "/" for ::1 at 2021-07-28 19:58:13 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 5450)
+Completed 200 OK in 56ms (Views: 54.5ms | Allocations: 6690)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:00:24 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 5457)
+Completed 200 OK in 67ms (Views: 65.5ms | Allocations: 6702)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:01:02 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 4882)
+Completed 200 OK in 52ms (Views: 51.9ms | Allocations: 5374)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:01:03 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 4879)
+Completed 200 OK in 42ms (Views: 41.3ms | Allocations: 5370)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:01:40 +0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 231.0ms | Allocations: 17460)
+Completed 200 OK in 253ms (Views: 240.0ms | ActiveRecord: 0.0ms | Allocations: 20396)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:01:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 4889)
+Completed 200 OK in 54ms (Views: 53.8ms | ActiveRecord: 0.0ms | Allocations: 5384)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:02:33 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 431.2ms | Allocations: 66026)
+Completed 200 OK in 436ms (Views: 435.9ms | ActiveRecord: 0.0ms | Allocations: 66520)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:02:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 61.3ms | Allocations: 19943)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.0ms | Allocations: 20440)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:02:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 70.8ms | Allocations: 19845)
+Completed 200 OK in 75ms (Views: 74.5ms | ActiveRecord: 0.0ms | Allocations: 20344)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:02:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 65.5ms | Allocations: 19845)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms | Allocations: 20345)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:02:56 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 67.3ms | Allocations: 19943)
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.0ms | Allocations: 20440)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:02:57 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 69.9ms | Allocations: 19843)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms | Allocations: 20340)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:09:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 360.7ms | Allocations: 85812)
+Completed 200 OK in 368ms (Views: 365.8ms | Allocations: 87058)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:09:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 20:12:57 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 184)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 729.1ms | Allocations: 226517)
+Completed 200 OK in 750ms (Views: 736.3ms | ActiveRecord: 0.0ms | Allocations: 229511)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:12:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 20:19:29 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 75.2ms | Allocations: 23973)
+Completed 200 OK in 82ms (Views: 80.2ms | Allocations: 25236)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:19:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 20:34:20 +0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 338)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 184)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 835.9ms | Allocations: 253373)
+Completed 200 OK in 859ms (Views: 843.4ms | ActiveRecord: 0.0ms | Allocations: 256367)
+
+
+Started GET "/images/slider/sec1_s1.jpg" for ::1 at 2021-07-28 20:34:21 +0700
+Started GET "/images/slider/sec1_s2.jpg" for ::1 at 2021-07-28 20:34:22 +0700
+Started GET "/images/slider/sec1_s3.jpg" for ::1 at 2021-07-28 20:34:22 +0700
+Started GET "/images/slider/sec1_s4.jpg" for ::1 at 2021-07-28 20:34:22 +0700
+Started GET "/images/slider/sec1_s5.jpg" for ::1 at 2021-07-28 20:34:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/sec1_s1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/sec1_s2.jpg"):
+  
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:34:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/sec1_s3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/sec1_s4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/sec1_s5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/images/slider/sec1_s7.jpg" for ::1 at 2021-07-28 20:34:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/sec1_s7.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-28 20:37:02 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 493.5ms | Allocations: 185006)
+Completed 200 OK in 500ms (Views: 498.5ms | ActiveRecord: 0.0ms | Allocations: 186265)
+
+
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 20:37:03 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:37:03 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 20:38:23 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 67.3ms | Allocations: 23121)
+Completed 200 OK in 70ms (Views: 70.0ms | ActiveRecord: 0.0ms | Allocations: 23613)
+
+
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 20:38:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:38:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 20:41:39 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 511.0ms | Allocations: 180929)
+Completed 200 OK in 513ms (Views: 512.5ms | Allocations: 181421)
+
+
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 20:41:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:41:40 +0700
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 20:41:40 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 20:42:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-28 20:42:16 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 71.4ms | Allocations: 23164)
+Completed 200 OK in 73ms (Views: 72.7ms | Allocations: 23656)
+
+
+Started GET "/" for ::1 at 2021-07-28 20:44:01 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1210)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1296)
+Completed 500 Internal Server Error in 12ms (Allocations: 2520)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<div class="container">
+	<div class="ed_search_form">
+		<form class="form-inline">
+		  <div class="form-group">
+			<input type="text" placeholder="Course Name" class="form-control" id="course">
+		  </div>
+		  <div class="form-group">
+			<input type="text" placeholder="Location" class="form-control" id="location">
+		  </div>
+		  <div class="form-group">
+			<input type="text" placeholder="Language" class="form-control" id="language">
+		  </div>
+		  <div class="form-group">
+			<input type="text" placeholder="Type" class="form-control" id="type">
+		  </div>
+		  <div class="form-group">
+		  <button type="button" class="btn ed_btn pull-right ed_orange">search</button>
+		  </div>
+		</form>
+	</div>
+</div>
+<div class="ed_transprentbg ed_toppadder100">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="ed_heading_top ed_toppadder50">
+					<h3>Choose how you want to learn</h3>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="ed_populer_areas_slider">
+					<div class="owl-carousel owl-theme">
+						<div class="item">
+							<div class="ed_item_img">
+                <%= link_to image_tag("S02.jpg", alt: "Cat image"),
+                  "https://rubyonrails.org/", class ="img-responsive" %>
+								
+							</div>
+							<div class="ed_item_description">
+								<h4>Vocational Counselling</h4>
+								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="ed_item_img">
+								<img src="images/S02.jpg" alt="item2" class="img-responsive">
+							</div>
+							<div class="ed_item_description">
+								<h4>Elementary School</h4>
+								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="ed_item_img">
+								<img src="images/S02.jpg" alt="item3" class="img-responsive">
+							</div>
+							<div class="ed_item_description">
+								<h4>Student Guidance</h4>
+								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="ed_item_img">
+								<img src="images/S02.jpg" alt="item4" class="img-responsive">
+							</div>
+							<div class="ed_item_description">
+								<h4>Psychology Tests</h4>
+								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="ed_item_img">
+								<img src="images/S02.jpg" alt="item1" class="img-responsive">
+							</div>
+							<div class="ed_item_description">
+								<h4>individual attention</h4>
+								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="ed_item_img">
+								<img src="images/S02.jpg" alt="item2" class="img-responsive">
+							</div>
+							<div class="ed_item_description">
+								<h4>Peer Recognition</h4>
+								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div><!-- /.container -->
+</div>
+):
+1:    
+2:    <div class="container">
+3:    	<div class="ed_search_form">
+4:    		<form class="form-inline">
+5:    		  <div class="form-group">
+6:    			<input type="text" placeholder="Course Name" class="form-control" id="course">
+7:    		  </div>
+8:    		  <div class="form-group">
+9:    			<input type="text" placeholder="Location" class="form-control" id="location">
+10:    		  </div>
+11:    		  <div class="form-group">
+12:    			<input type="text" placeholder="Language" class="form-control" id="language">
+13:    		  </div>
+14:    		  <div class="form-group">
+15:    			<input type="text" placeholder="Type" class="form-control" id="type">
+16:    		  </div>
+17:    		  <div class="form-group">
+18:    		  <button type="button" class="btn ed_btn pull-right ed_orange">search</button>
+19:    		  </div>
+20:    		</form>
+21:    	</div>
+22:    </div>
+23:    <div class="ed_transprentbg ed_toppadder100">
+24:    	<div class="container">
+25:    		<div class="row">
+26:    			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+27:    				<div class="ed_heading_top ed_toppadder50">
+28:    					<h3>Choose how you want to learn</h3>
+29:    				</div>
+30:    			</div>
+31:    			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+32:    				<div class="ed_populer_areas_slider">
+33:    					<div class="owl-carousel owl-theme">
+34:    						<div class="item">
+35:    							<div class="ed_item_img">
+36:                    <%= link_to image_tag("S02.jpg", alt: "Cat image"),
+37:                      "https://rubyonrails.org/", class ="img-responsive" %>
+38:    								
+39:    							</div>
+40:    							<div class="ed_item_description">
+41:    								<h4>Vocational Counselling</h4>
+42:    								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+43:    								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+44:    							</div>
+45:    						</div>
+46:    						<div class="item">
+47:    							<div class="ed_item_img">
+48:    								<img src="images/S02.jpg" alt="item2" class="img-responsive">
+49:    							</div>
+50:    							<div class="ed_item_description">
+51:    								<h4>Elementary School</h4>
+52:    								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+53:    								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+54:    							</div>
+55:    						</div>
+56:    						<div class="item">
+57:    							<div class="ed_item_img">
+58:    								<img src="images/S02.jpg" alt="item3" class="img-responsive">
+59:    							</div>
+60:    							<div class="ed_item_description">
+61:    								<h4>Student Guidance</h4>
+62:    								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+63:    								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+64:    							</div>
+65:    						</div>
+66:    						<div class="item">
+67:    							<div class="ed_item_img">
+68:    								<img src="images/S02.jpg" alt="item4" class="img-responsive">
+69:    							</div>
+70:    							<div class="ed_item_description">
+71:    								<h4>Psychology Tests</h4>
+72:    								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+73:    								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+74:    							</div>
+75:    						</div>
+76:    						<div class="item">
+77:    							<div class="ed_item_img">
+78:    								<img src="images/S02.jpg" alt="item1" class="img-responsive">
+79:    							</div>
+80:    							<div class="ed_item_description">
+81:    								<h4>individual attention</h4>
+82:    								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+83:    								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+84:    							</div>
+85:    						</div>
+86:    						<div class="item">
+87:    							<div class="ed_item_img">
+88:    								<img src="images/S02.jpg" alt="item2" class="img-responsive">
+89:    							</div>
+90:    							<div class="ed_item_description">
+91:    								<h4>Peer Recognition</h4>
+92:    								<p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, obvious right?</p>
+93:    								<a href="#" class="ed_getinvolved">get involved <i class="fa fa-long-arrow-right"></i></a>
+94:    							</div>
+95:    						</div>
+96:    					</div>
+97:    				</div>
+98:    			</div>
+99:    		</div>
+100:        </div><!-- /.container -->
+101:    </div>
+  
+app/views/static_pages/home.html.erb:37: syntax error, unexpected '='
+app/views/static_pages/home.html.erb:37: syntax error, unexpected '='
+app/views/static_pages/home.html.erb:37: syntax error, unexpected '='
+app/views/static_pages/home.html.erb:37: syntax error, unexpected '='
+app/views/static_pages/home.html.erb:37: syntax error, unexpected '='
+app/views/static_pages/home.html.erb:37: syntax error, unexpected '='
+Started GET "/" for ::1 at 2021-07-28 20:44:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 104.5ms | Allocations: 82606)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 171.6ms | Allocations: 106328)
+Completed 200 OK in 178ms (Views: 176.5ms | Allocations: 107575)
+
+
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 20:44:20 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:44:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 20:47:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 82.4ms | Allocations: 23951)
+Completed 200 OK in 84ms (Views: 83.6ms | Allocations: 24443)
+
+
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 20:47:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:47:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 20:49:28 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 84.6ms | Allocations: 24949)
+Completed 200 OK in 92ms (Views: 89.9ms | Allocations: 26197)
+
+
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 20:49:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:49:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 20:56:26 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 931)
+  Rendered layout layouts/application.html.erb (Duration: 248.2ms | Allocations: 106439)
+Completed 500 Internal Server Error in 250ms (Allocations: 106905)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "... css end ----*/": expected "}", was ""
+        on line 5131:35 of app/assets/stylesheets/custom.scss
+>> /*------ responsive css end ----*/
+
+   ----------------------------------^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/custom.scss:5131
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2021-07-28 20:56:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.6ms | Allocations: 931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 569.1ms | Allocations: 181466)
+Completed 200 OK in 572ms (Views: 571.9ms | Allocations: 181957)
+
+
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 20:56:54 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 20:56:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-28 21:01:30 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 479.7ms | Allocations: 177482)
+Completed 200 OK in 481ms (Views: 480.8ms | Allocations: 177974)
+
+
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 21:01:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 21:01:31 +0700
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 21:01:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-28 21:03:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 930)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 448.8ms | Allocations: 177480)
+Completed 200 OK in 451ms (Views: 450.8ms | Allocations: 177971)
+
+
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 21:03:21 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 21:03:21 +0700
+Started GET "/images/S02.jpg" for ::1 at 2021-07-28 21:03:21 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/S02.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-28 21:03:45 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 73.0ms | Allocations: 24060)
+Completed 200 OK in 81ms (Views: 78.8ms | Allocations: 25306)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-28 21:03:45 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 07:49:20 +0700
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 184)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 895.5ms | Allocations: 272088)
+Completed 200 OK in 920ms (Views: 904.1ms | ActiveRecord: 0.0ms | Allocations: 275025)
+
+
+Started GET "/" for ::1 at 2021-07-29 07:49:22 +0700
+Started GET "/images/slider/sec1_s1_big.jpg" for ::1 at 2021-07-29 07:49:22 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 07:49:22 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 07:49:22 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/sec1_s1_big.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 254.9ms | Allocations: 100729)
+Completed 200 OK in 258ms (Views: 257.5ms | ActiveRecord: 0.0ms | Allocations: 101369)
+
+
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 07:49:22 +0700
+Started GET "/images/slider/sec1_s4_big.jpg" for ::1 at 2021-07-29 07:49:22 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 07:49:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/sec1_s4_big.jpg"):
+  
+Started GET "/images/slider/sec1_s6_big.jpg" for ::1 at 2021-07-29 07:49:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/fonts/star.woff" for ::1 at 2021-07-29 07:49:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/sec1_s6_big.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.woff"):
+  
+Started GET "/fonts/star.ttf" for ::1 at 2021-07-29 07:49:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.ttf"):
+  
+Started GET "/" for ::1 at 2021-07-29 07:56:51 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1831)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 79.1ms | Allocations: 25643)
+Completed 200 OK in 86ms (Views: 84.3ms | Allocations: 26901)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 07:56:51 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 07:56:51 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 07:56:51 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 07:56:51 +0700
+Started GET "/fonts/star.woff" for ::1 at 2021-07-29 07:56:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.woff"):
+  
+Started GET "/fonts/star.ttf" for ::1 at 2021-07-29 07:56:51 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.ttf"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:00:21 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 429.2ms | Allocations: 186991)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 183)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 588.5ms | Allocations: 266099)
+Completed 200 OK in 595ms (Views: 593.6ms | Allocations: 267345)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:00:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:00:22 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:00:22 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:00:22 +0700
+Started GET "/fonts/star.woff" for ::1 at 2021-07-29 08:00:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.woff"):
+  
+Started GET "/fonts/star.ttf" for ::1 at 2021-07-29 08:00:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.ttf"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:03:45 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1530)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 457.1ms | Allocations: 176597)
+Completed 200 OK in 460ms (Views: 459.0ms | Allocations: 177089)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:03:46 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:03:46 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:03:46 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:03:46 +0700
+Started GET "/fonts/star.woff" for ::1 at 2021-07-29 08:03:46 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.woff"):
+  
+Started GET "/fonts/star.ttf" for ::1 at 2021-07-29 08:03:46 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.ttf"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:07:16 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 487.1ms | Allocations: 178027)
+Completed 200 OK in 489ms (Views: 488.5ms | Allocations: 178519)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:07:17 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:07:17 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:07:17 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:07:17 +0700
+Started GET "/fonts/star.woff" for ::1 at 2021-07-29 08:07:17 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.woff"):
+  
+Started GET "/fonts/star.ttf" for ::1 at 2021-07-29 08:07:17 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.ttf"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:09:32 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 453.7ms | Allocations: 177941)
+Completed 200 OK in 456ms (Views: 455.0ms | Allocations: 178432)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:09:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:09:33 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:09:33 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:09:33 +0700
+Started GET "/fonts/star.woff" for ::1 at 2021-07-29 08:09:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.woff"):
+  
+Started GET "/fonts/star.ttf" for ::1 at 2021-07-29 08:09:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.ttf"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:10:28 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 496.7ms | Allocations: 176650)
+Completed 200 OK in 498ms (Views: 497.8ms | Allocations: 177141)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:10:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:10:29 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:10:29 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:10:29 +0700
+Started GET "/fonts/star.woff" for ::1 at 2021-07-29 08:10:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.woff"):
+  
+Started GET "/fonts/star.ttf" for ::1 at 2021-07-29 08:10:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.ttf"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:13:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 571.5ms | Allocations: 185188)
+Completed 200 OK in 575ms (Views: 574.7ms | Allocations: 185679)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:13:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:13:54 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:13:54 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:13:54 +0700
+Started GET "/fonts/star.woff" for ::1 at 2021-07-29 08:13:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.woff"):
+  
+Started GET "/fonts/star.ttf" for ::1 at 2021-07-29 08:13:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/star.ttf"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:16:29 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1811)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 81.8ms | Allocations: 25626)
+Completed 200 OK in 89ms (Views: 86.9ms | Allocations: 26872)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:16:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:16:29 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:16:29 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:16:29 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:17:27 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1806)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 111.2ms | Allocations: 25628)
+Completed 200 OK in 121ms (Views: 117.8ms | Allocations: 26875)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:17:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:17:27 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:17:27 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:17:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:19:21 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 549.4ms | Allocations: 182866)
+Completed 200 OK in 551ms (Views: 550.9ms | Allocations: 183358)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:19:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:19:22 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:19:22 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:19:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:19:30 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 77.3ms | Allocations: 24595)
+Completed 200 OK in 87ms (Views: 86.8ms | Allocations: 25086)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:19:31 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:19:31 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:19:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:19:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:20:09 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1808)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 77.4ms | Allocations: 25623)
+Completed 200 OK in 85ms (Views: 83.7ms | Allocations: 26869)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:20:09 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:20:09 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:20:09 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:20:09 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:20:56 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 87.7ms | Allocations: 24556)
+Completed 200 OK in 90ms (Views: 89.4ms | Allocations: 25054)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:20:56 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:20:56 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:20:56 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:20:56 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:28:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 478.9ms | Allocations: 188996)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 630.1ms | Allocations: 268144)
+Completed 200 OK in 637ms (Views: 635.4ms | Allocations: 269390)
+
+
+Started GET "/images/slider/slider_4.jpg" for ::1 at 2021-07-29 08:28:15 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:28:15 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:28:15 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:28:15 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:28:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/slider_4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:29:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2917)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 94.1ms | Allocations: 26695)
+Completed 200 OK in 103ms (Views: 99.8ms | Allocations: 27941)
+
+
+Started GET "/images/slider/slider_4.jpg" for ::1 at 2021-07-29 08:29:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/slider/slider_4.jpg"):
+  
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:29:20 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:29:20 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:29:20 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:29:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:30:39 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 82.6ms | Allocations: 26569)
+Completed 200 OK in 89ms (Views: 87.3ms | Allocations: 27816)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:30:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:30:40 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:30:40 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:30:40 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:31:40 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 83.5ms | Allocations: 25326)
+Completed 200 OK in 86ms (Views: 85.1ms | Allocations: 25819)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:31:40 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:31:40 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:31:40 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:31:40 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:31:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2293)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 513.0ms | Allocations: 185458)
+Completed 200 OK in 515ms (Views: 514.3ms | Allocations: 185950)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:31:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:31:48 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:31:48 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:31:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:33:39 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 93.6ms | Allocations: 26568)
+Completed 200 OK in 101ms (Views: 99.2ms | Allocations: 27815)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:33:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:33:39 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:33:39 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:33:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:33:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2294)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 78.1ms | Allocations: 25326)
+Completed 200 OK in 80ms (Views: 79.6ms | Allocations: 25819)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:33:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:33:48 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:33:48 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:33:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:34:15 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 93.6ms | Allocations: 26574)
+Completed 200 OK in 101ms (Views: 98.9ms | Allocations: 27821)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:34:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:34:15 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:34:15 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:34:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:36:22 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2744)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 84.4ms | Allocations: 26573)
+Completed 200 OK in 91ms (Views: 89.4ms | Allocations: 27820)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:36:22 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:36:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:36:22 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:36:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:36:52 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2627)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 82.6ms | Allocations: 26456)
+Completed 200 OK in 90ms (Views: 88.3ms | Allocations: 27703)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:36:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:36:53 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:36:53 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:36:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:37:37 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2608)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 85.2ms | Allocations: 26437)
+Completed 200 OK in 92ms (Views: 89.8ms | Allocations: 27684)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:37:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:37:37 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:37:38 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:37:38 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:42:09 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2620)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 516.3ms | Allocations: 191703)
+Completed 200 OK in 523ms (Views: 521.2ms | Allocations: 192950)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:42:10 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:42:10 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:42:10 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:42:10 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:42:56 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2980)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 84.3ms | Allocations: 26767)
+Completed 200 OK in 91ms (Views: 89.5ms | Allocations: 28014)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:42:56 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:42:56 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:42:57 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:42:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:47:58 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2981)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 84.4ms | Allocations: 26817)
+Completed 200 OK in 92ms (Views: 90.2ms | Allocations: 28064)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:47:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:47:59 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:47:59 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:47:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:48:16 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2981)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 80.1ms | Allocations: 26816)
+Completed 200 OK in 87ms (Views: 85.4ms | Allocations: 28063)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:48:17 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:48:17 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:48:17 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:48:17 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:49:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2986)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 26818)
+Completed 200 OK in 78ms (Views: 75.6ms | Allocations: 28065)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:49:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:49:07 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:49:07 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:49:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:49:22 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2986)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 78.6ms | Allocations: 26816)
+Completed 200 OK in 86ms (Views: 84.4ms | Allocations: 28063)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:49:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:49:22 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:49:22 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:49:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:49:48 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2981)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 78.4ms | Allocations: 26810)
+Completed 200 OK in 85ms (Views: 83.4ms | Allocations: 28057)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:49:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:49:48 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:49:48 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:49:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:49:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2981)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 85.9ms | Allocations: 26810)
+Completed 200 OK in 94ms (Views: 92.3ms | Allocations: 28057)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:49:53 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:49:53 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:49:53 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:49:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:50:50 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 90.3ms | Allocations: 27559)
+Completed 200 OK in 97ms (Views: 95.4ms | Allocations: 28806)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:50:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:50:50 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:50:50 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:50:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:51:13 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3730)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 75.3ms | Allocations: 27558)
+Completed 200 OK in 82ms (Views: 80.0ms | Allocations: 28805)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:51:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:51:14 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:51:14 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:51:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:51:43 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.7ms | Allocations: 4824)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 83.1ms | Allocations: 28652)
+Completed 200 OK in 93ms (Views: 90.8ms | Allocations: 29899)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:51:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:51:43 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:51:43 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:51:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:55:17 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 16.8ms | Allocations: 4827)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 106.9ms | Allocations: 28660)
+Completed 200 OK in 116ms (Views: 112.5ms | Allocations: 29907)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:55:17 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:55:17 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:55:17 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:55:17 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:55:31 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.6ms | Allocations: 4826)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 80.2ms | Allocations: 28654)
+Completed 200 OK in 87ms (Views: 85.5ms | Allocations: 29901)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:55:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:55:31 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:55:31 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:55:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:55:58 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.9ms | Allocations: 4831)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 77.5ms | Allocations: 28659)
+Completed 200 OK in 85ms (Views: 82.8ms | Allocations: 29906)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:55:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:55:58 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:55:58 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:55:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:57:42 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.8ms | Allocations: 4867)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 81.5ms | Allocations: 28695)
+Completed 200 OK in 90ms (Views: 88.2ms | Allocations: 29942)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:57:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:57:42 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:57:42 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:57:42 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:58:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.8ms | Allocations: 4866)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 86.6ms | Allocations: 28694)
+Completed 200 OK in 95ms (Views: 92.3ms | Allocations: 29941)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:58:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:58:06 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:58:06 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:58:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:58:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 15.3ms | Allocations: 4868)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 175)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 108.2ms | Allocations: 28701)
+Completed 200 OK in 115ms (Views: 113.2ms | Allocations: 29948)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:58:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:58:19 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:58:19 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:58:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:59:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.9ms | Allocations: 4865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 169)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 101.7ms | Allocations: 28687)
+Completed 200 OK in 109ms (Views: 107.3ms | Allocations: 29934)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:59:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:59:20 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:59:20 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:59:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:59:22 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 80.1ms | Allocations: 27200)
+Completed 200 OK in 82ms (Views: 81.4ms | Allocations: 27699)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:59:22 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:59:22 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:59:22 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:59:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 08:59:35 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.0ms | Allocations: 4865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 74.8ms | Allocations: 28686)
+Completed 200 OK in 82ms (Views: 79.8ms | Allocations: 29933)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 08:59:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 08:59:35 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 08:59:35 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 08:59:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:01:57 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 21.2ms | Allocations: 4866)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 168)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 99.4ms | Allocations: 28692)
+Completed 200 OK in 106ms (Views: 104.3ms | Allocations: 29939)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:01:57 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:01:57 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:01:57 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:01:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:08:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 173)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 561.1ms | Allocations: 185739)
+Completed 200 OK in 568ms (Views: 565.6ms | Allocations: 186986)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:08:21 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:08:21 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:08:21 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:08:21 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:08:52 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.6ms | Allocations: 4865)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 173)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 509.1ms | Allocations: 186168)
+Completed 200 OK in 516ms (Views: 514.1ms | Allocations: 187414)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:08:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:08:53 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:08:53 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:08:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:12:21 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 494.0ms | Allocations: 185039)
+Completed 200 OK in 496ms (Views: 495.1ms | Allocations: 185531)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:12:21 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:12:22 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:12:22 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:12:22 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:12:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:13:10 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.9ms | Allocations: 4163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 530.7ms | Allocations: 185445)
+Completed 200 OK in 532ms (Views: 531.8ms | Allocations: 185936)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:13:11 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:13:11 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:13:11 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:13:11 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:13:11 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:15:00 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.9ms | Allocations: 4163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 520.8ms | Allocations: 186099)
+Completed 200 OK in 522ms (Views: 521.6ms | Allocations: 186590)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:15:00 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:15:01 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:15:01 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:15:01 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:15:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:15:35 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 492.4ms | Allocations: 183047)
+Completed 200 OK in 494ms (Views: 493.2ms | Allocations: 183538)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:15:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:15:36 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:15:36 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:15:36 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:15:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:17:34 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.8ms | Allocations: 4163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 470.9ms | Allocations: 181872)
+Completed 200 OK in 473ms (Views: 472.5ms | Allocations: 182363)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:17:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:17:35 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:17:35 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:17:35 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:17:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:17:49 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 480.0ms | Allocations: 183113)
+Completed 200 OK in 481ms (Views: 480.8ms | Allocations: 183604)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:17:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:17:49 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:17:49 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:17:49 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:17:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:18:09 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 476.5ms | Allocations: 182645)
+Completed 200 OK in 478ms (Views: 478.1ms | Allocations: 183136)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:18:10 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:18:10 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:18:10 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:18:10 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:18:10 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:19:13 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.1ms | Allocations: 4163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 516.8ms | Allocations: 182454)
+Completed 200 OK in 520ms (Views: 518.9ms | Allocations: 182945)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:19:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:19:14 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:19:14 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:19:14 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:19:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:21:25 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 471.2ms | Allocations: 182858)
+Completed 200 OK in 473ms (Views: 472.5ms | Allocations: 183349)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:21:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:21:26 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:21:26 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:21:26 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:21:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:22:18 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 37.3ms | Allocations: 4164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 497.3ms | Allocations: 182486)
+Completed 200 OK in 499ms (Views: 499.0ms | Allocations: 182977)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:22:18 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:22:18 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:22:18 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:22:18 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:22:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.css-28a8556e8efb579c2d5bbc7c3d6812e62246182432b0834fe97380f2af740fff.map"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:25:22 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 119.5ms | Allocations: 69901)
+Completed 200 OK in 121ms (Views: 120.4ms | Allocations: 70398)
+
+
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:25:22 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:25:22 +0700
+Started GET "/" for ::1 at 2021-07-29 09:25:22 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:25:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 62.0ms | Allocations: 45413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 201.6ms | Allocations: 106631)
+Completed 200 OK in 203ms (Views: 202.9ms | Allocations: 107689)
+
+
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:25:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:25:23 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:25:23 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:25:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:25:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+Started GET "/about.html" for ::1 at 2021-07-29 09:25:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/about.html"):
+  
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:25:24 +0700
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:25:24 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:25:24 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:25:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:25:25 +0700
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:25:25 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:25:25 +0700
+Started GET "/" for ::1 at 2021-07-29 09:25:25 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:25:26 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 76.1ms | Allocations: 25934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 167.9ms | Allocations: 56588)
+Completed 200 OK in 170ms (Views: 169.7ms | Allocations: 57188)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+Started GET "/images/content/team_1.jpg" for ::1 at 2021-07-29 09:25:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_1.jpg"):
+  
+Started GET "/images/content/team_2.jpg" for ::1 at 2021-07-29 09:25:26 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:25:26 +0700
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:25:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:28:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 450.5ms | Allocations: 191089)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 172)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 594.0ms | Allocations: 270696)
+Completed 200 OK in 601ms (Views: 599.4ms | Allocations: 271942)
+
+
+Started GET "/images/content/team_6.jpg" for ::1 at 2021-07-29 09:28:08 +0700
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:28:08 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/content/team_6.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-07-29 09:29:00 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 13.4ms | Allocations: 8237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 167)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 93.0ms | Allocations: 32014)
+Completed 200 OK in 99ms (Views: 97.4ms | Allocations: 33260)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-07-29 09:29:00 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
