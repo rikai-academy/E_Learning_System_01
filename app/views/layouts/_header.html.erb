@@ -31,12 +31,10 @@
 					</div>
 					<div class="edoco_menu">
 						<ul class="collapse navbar-collapse" id="ed_menu">
-							<li><a href="#"><%= t('layouts.header.home')%></a>								
-							</li>
-							<li><a href="about.html"><%= t('layouts.header.about')%></a></li>							
-							<li><a href="#"><%= t('layouts.header.courses')%></a>
-							</li>							
-							<li><a href="contact.html"><%= t('layouts.header.contact')%></a></li>
+							<li><%= link_to t('layouts.header.home'), root_path %></li>
+							<li><%= link_to t('layouts.header.about'), "#" %></li>							
+							<li><%= link_to t('layouts.header.courses'), cate_path %></li>							
+							<li><%= link_to t('layouts.header.contact'), "#" %></li>
 						</ul>
 					</div>
 				</div>

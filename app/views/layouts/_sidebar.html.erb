@@ -3,13 +3,13 @@
     <div class="ed_profile_img">
       <%= image_tag "23.png" %>
     </div>
-    <h3>andre house</h3>
+    <h3>Le Duy Vuong</h3>
     <div class="ed_tabs_left">
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#home" data-toggle="tab"><%= t('layouts.header.home')%></a></li>
-        <li><a href="#wordlist" data-toggle="tab"><%= t('layouts.sidebar.wordlist')%></a></li>
-        <li><a href="#" data-toggle="tab"><%= t('layouts.sidebar.activity')%></a></li>
-        <li><a href="#" data-toggle="tab"><%= t('layouts.sidebar.profile')%></a></li>
+        <li class="active"><%= link_to t('layouts.header.home'), "#dasboard", { :class => '', 'data-toggle' => 'tab' } %></li>
+        <li><%= link_to t('layouts.sidebar.wordlist'), "#wordlist", { :class => '', 'data-toggle' => 'tab' } %></li>
+        <li><%= link_to t('layouts.sidebar.activity'), "#", { :class => '', 'data-toggle' => 'tab' } %></li>
+        <li><%= link_to t('layouts.sidebar.profile'), "#", { :class => '', 'data-toggle' => 'tab' } %></li>
       </ul>
     </div>
   </div>

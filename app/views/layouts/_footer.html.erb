@@ -53,10 +53,10 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<div class="ed_footer_menu">
 						<ul>
-							<li><a href="#"><%= t('layouts.header.home')%></a></li>
-							<li><a href="#"><%= t('layouts.footer.private')%></a></li>
-							<li><a href="#"><%= t('layouts.header.about')%></a></li>
-							<li><a href="#"><%= t('layouts.header.contact')%></a></li>
+							<li><%= link_to t('layouts.header.home'), root_path %></li>
+							<li><%= link_to t('layouts.footer.private'), "#" %></li>
+							<li><%= link_to t('layouts.header.about'), "#" %></li>
+							<li><%= link_to t('layouts.header.contact'), "#" %></a></li>
 						</ul>
 				</div>
 			</div>

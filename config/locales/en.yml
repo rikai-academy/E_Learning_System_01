@@ -22,6 +22,7 @@ en:
       social: 'Social Media'
   static_pages:
     home:
+      title: 'Home'
       hello: 'Hello'
       hi: 'Hi'
       content: ', here you have to see and update your profile, subscribed
@@ -30,3 +31,5 @@ en:
       post: 'Post'
       summary:  'Summary'
       wellcome: 'Welcome to Dashboard'
+      course_number: 'Course %{numberc}'
+      lesson_number: 'Lesson %{numberl}'

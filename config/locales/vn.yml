@@ -22,6 +22,7 @@ vi:
       social: 'Truyền thông xã hội'
   static_pages:
     home:
+      title:  'Trang chủ'
       hello: 'Xin chào'
       hi: 'Xin chào'
       content: ', ở đây bạn phải xem và cập nhật hồ sơ của mình, đã đăng ký
@@ -29,3 +30,6 @@ vi:
                   bảng điều khiển bên trái được cung cấp.'
       post: 'Ghi nhớ'
       summary:  'Tóm tắt'
+      course_number: 'Khóa học %{numberc}'
+      lesson_number: 'Bài học %{numberl}'
+        
