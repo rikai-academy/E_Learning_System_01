@@ -33,3 +33,22 @@ en:
       wellcome: 'Welcome to Dashboard'
       course_number: 'Course %{numberc}'
       lesson_number: 'Lesson %{numberl}'
+    cate:
+      title:  'Courses'
+      coursename: 'Course Name'
+      location: 'Location'
+      language: 'Language'
+      type: 'Type'
+      search: 'Search'
+      allcourse:  'All Course'
+      students: 'students'
+      getinvolved:  'Get Involved '
+      previous_label: 'Prev'
+      next_label: 'Next'
+  users:
+    new:
+      title:  'SignUp'
+      signup: 'Sign Up'
+      create: 'Create my account'
+      password: 'Password'
+      confirm:  'Password Confirmation'

@@ -177,6 +177,7 @@ puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
 puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
 puma (5.3.2) lib/puma/server.rb:438:in `process_client'
 puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2021-07-27 21:24:51 +0700
   
 ActiveRecord::NoDatabaseError (Unknown database 'e_learning_system_01_development'):
@@ -199,6 +200,79 @@ activerecord (6.1.4) lib/active_record/migration.rb:606:in `build_watcher'
 activerecord (6.1.4) lib/active_record/migration.rb:588:in `block in call'
 activerecord (6.1.4) lib/active_record/migration.rb:587:in `synchronize'
 activerecord (6.1.4) lib/active_record/migration.rb:587:in `call'
+=======
+Started GET "/users/new" for ::1 at 2021-08-01 16:28:57 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 319)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 65.0ms | Allocations: 26127)
+Completed 200 OK in 79ms (Views: 66.2ms | ActiveRecord: 4.8ms | Allocations: 32266)
+
+
+Started GET "/users/new" for ::1 at 2021-08-01 16:28:58 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 258)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 120.0ms | Allocations: 25925)
+Completed 200 OK in 123ms (Views: 121.2ms | ActiveRecord: 0.0ms | Allocations: 26455)
+
+
+Started POST "/users?locale=vi" for ::1 at 2021-08-01 16:29:09 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Rails Tutorial", "email"=>"firesoul0608@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account", "locale"=>"vi"}
+[31mUnpermitted parameter: :name[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'firesoul0608@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 461)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 68.4ms | Allocations: 26730)
+Completed 200 OK in 299ms (Views: 69.2ms | ActiveRecord: 2.5ms | Allocations: 30486)
+
+
+Started GET "/users?locale=vi" for ::1 at 2021-08-01 16:29:49 +0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.1.4) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4) lib/active_record/migration.rb:601:in `call'
+>>>>>>> 4ea9fca... Basic Sign Up
 actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
 activesupport (6.1.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
 actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
@@ -236,6 +310,7 @@ puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
 puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
 puma (5.3.2) lib/puma/server.rb:438:in `process_client'
 puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2021-07-27 21:25:16 +0700
 Processing by Rails::WelcomeController#index as HTML
   Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
@@ -243,3 +318,1045 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 29ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3344)
 
 
+Started GET "/" for ::1 at 2021-08-01 14:12:40 +0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 697.7ms | Allocations: 126621)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 701.5ms | Allocations: 128548)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 570)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 639)
+  Rendered layout layouts/application.html.erb (Duration: 773.3ms | Allocations: 154709)
+Completed 200 OK in 791ms (Views: 779.0ms | ActiveRecord: 0.0ms | Allocations: 157746)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:12:41 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:13:27 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 19.1ms | Allocations: 4802)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 20.6ms | Allocations: 5830)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 265)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 93.8ms | Allocations: 30308)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.0ms | Allocations: 31032)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:13:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:13:53 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.5ms | Allocations: 1097)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2122)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 231)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 89.0ms | Allocations: 26575)
+Completed 200 OK in 91ms (Views: 90.3ms | ActiveRecord: 0.0ms | Allocations: 27089)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:13:53 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:14:57 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 20.7ms | Allocations: 4966)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 24.7ms | Allocations: 6431)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 515)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 586)
+  Rendered layout layouts/application.html.erb (Duration: 97.9ms | Allocations: 32013)
+Completed 200 OK in 105ms (Views: 102.5ms | ActiveRecord: 0.0ms | Allocations: 33345)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:14:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:15:49 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.9ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2789)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 77.3ms | Allocations: 28355)
+Completed 200 OK in 85ms (Views: 82.3ms | ActiveRecord: 0.0ms | Allocations: 29622)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:15:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:16:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.7ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2787)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 86.4ms | Allocations: 28353)
+Completed 200 OK in 94ms (Views: 91.8ms | ActiveRecord: 0.0ms | Allocations: 29620)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:16:21 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:17:33 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 23.1ms | Allocations: 4981)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 26.8ms | Allocations: 6469)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 520)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 586)
+  Rendered layout layouts/application.html.erb (Duration: 110.5ms | Allocations: 32055)
+Completed 200 OK in 117ms (Views: 115.4ms | ActiveRecord: 0.0ms | Allocations: 33384)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:17:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:20:18 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 3.0ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2864)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 79.8ms | Allocations: 28432)
+Completed 200 OK in 87ms (Views: 84.8ms | ActiveRecord: 0.0ms | Allocations: 29703)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:20:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:20:43 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.6ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 489)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 93.2ms | Allocations: 28681)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.0ms | Allocations: 29948)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:20:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:21:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.7ms | Allocations: 1097)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 231)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 87.0ms | Allocations: 26573)
+Completed 200 OK in 89ms (Views: 88.5ms | ActiveRecord: 0.0ms | Allocations: 27085)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:21:19 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:22:09 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.6ms | Allocations: 1298)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 489)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 100.4ms | Allocations: 28680)
+Completed 200 OK in 108ms (Views: 105.5ms | ActiveRecord: 0.0ms | Allocations: 29947)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:22:10 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:23:02 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.8ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 97.9ms | Allocations: 28676)
+Completed 200 OK in 105ms (Views: 103.2ms | Allocations: 29943)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:23:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:23:39 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.6ms | Allocations: 1298)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2991)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 489)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 89.4ms | Allocations: 28564)
+Completed 200 OK in 96ms (Views: 94.3ms | Allocations: 29831)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:23:39 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:28:35 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 3.0ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 96.7ms | Allocations: 28685)
+Completed 200 OK in 103ms (Views: 101.6ms | Allocations: 29952)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:28:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:30:26 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 3.0ms | Allocations: 1298)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 489)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 92.1ms | Allocations: 28679)
+Completed 200 OK in 99ms (Views: 97.1ms | Allocations: 29946)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:30:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:31:28 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.9ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 97.7ms | Allocations: 28678)
+Completed 200 OK in 105ms (Views: 102.8ms | Allocations: 29945)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:31:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:31:35 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.6ms | Allocations: 1298)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 489)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 89.5ms | Allocations: 28677)
+Completed 200 OK in 96ms (Views: 94.2ms | Allocations: 29944)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:31:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:32:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.7ms | Allocations: 1298)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 6.2ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 587)
+  Rendered layout layouts/application.html.erb (Duration: 102.8ms | Allocations: 29334)
+Completed 200 OK in 110ms (Views: 107.9ms | Allocations: 30601)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:32:44 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:34:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.8ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 92.0ms | Allocations: 28680)
+Completed 200 OK in 99ms (Views: 97.3ms | Allocations: 29947)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:34:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:35:12 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.7ms | Allocations: 1298)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 489)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 92.0ms | Allocations: 28680)
+Completed 200 OK in 99ms (Views: 96.7ms | Allocations: 29947)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:35:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:40:24 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 3.0ms | Allocations: 1298)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.8ms | Allocations: 489)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 115.2ms | Allocations: 28689)
+Completed 200 OK in 122ms (Views: 120.0ms | Allocations: 29956)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:40:24 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:42:30 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.7ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2325)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 90.4ms | Allocations: 27891)
+Completed 200 OK in 97ms (Views: 95.5ms | Allocations: 29159)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:42:30 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:48:00 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 3.1ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 1.6ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 102.9ms | Allocations: 28680)
+Completed 200 OK in 110ms (Views: 107.8ms | Allocations: 29948)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:48:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:49:43 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.6ms | Allocations: 1298)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 12.3ms | Allocations: 3110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 84.6ms | Allocations: 28682)
+Completed 200 OK in 92ms (Views: 89.4ms | Allocations: 29948)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:49:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:50:59 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.6ms | Allocations: 1298)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 85.8ms | Allocations: 28682)
+Completed 200 OK in 94ms (Views: 91.4ms | Allocations: 29949)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:50:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:51:26 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.8ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 93.1ms | Allocations: 28682)
+Completed 200 OK in 101ms (Views: 98.7ms | Allocations: 29949)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:51:26 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:52:13 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.6ms | Allocations: 1298)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 489)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 85.7ms | Allocations: 28681)
+Completed 200 OK in 93ms (Views: 90.5ms | Allocations: 29948)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:52:13 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+Started GET "/" for ::1 at 2021-08-01 14:54:12 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.7ms | Allocations: 1299)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.5ms | Allocations: 484)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 89.8ms | Allocations: 28687)
+Completed 200 OK in 97ms (Views: 94.8ms | Allocations: 29954)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 14:54:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT GET_LOCK('3130052965522379190', 0)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20210801081136)
+  [1m[35m (240.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `username` varchar(255), `email` varchar(255), `status` tinyint(1), `admin` tinyint(1), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (11.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20210801081136')[0m
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (15.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT RELEASE_LOCK('3130052965522379190')[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('3130052965522379190', 0)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddPasswordDigestToUsers (20210801081224)
+  [1m[35m (36.5ms)[0m  [1m[35mALTER TABLE `users` ADD `password_digest` varchar(255)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20210801081224')[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('3130052965522379190')[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2021-08-01 15:35:02 +0700
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 25.0ms | Allocations: 5187)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 27.4ms | Allocations: 5893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 411)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 512)
+  Rendered layout layouts/application.html.erb (Duration: 925.3ms | Allocations: 291743)
+Completed 200 OK in 932ms (Views: 930.2ms | ActiveRecord: 0.0ms | Allocations: 293074)
+
+
+Started GET "/images/footer/F_Logo.png" for ::1 at 2021-08-01 15:35:03 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/footer/F_Logo.png"):
+  
+=======
+Started GET "/users/new" for ::1 at 2021-08-01 16:29:51 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 212)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1604)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 510)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 27726)
+Completed 200 OK in 88ms (Views: 85.9ms | ActiveRecord: 0.0ms | Allocations: 29020)
+
+
+Started GET "/vi" for ::1 at 2021-08-01 16:29:51 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.7ms | Allocations: 1312)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 272)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 88.7ms | Allocations: 26889)
+Completed 200 OK in 94ms (Views: 92.4ms | ActiveRecord: 0.0ms | Allocations: 27934)
+
+
+Started GET "/users/new" for ::1 at 2021-08-01 16:29:54 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 965)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 260)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 82.5ms | Allocations: 25914)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.0ms | Allocations: 26445)
+
+
+Started POST "/users?locale=vi" for ::1 at 2021-08-01 16:30:06 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"metghe", "email"=>"firesoul0608@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account", "locale"=>"vi"}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'firesoul0608@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (9.3ms)[0m  [1m[32mINSERT INTO `users` (`username`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('metghe', 'firesoul0608@gmail.com', '2021-08-01 09:30:06.918489', '2021-08-01 09:30:06.918489', '$2a$12$yDYp1lM5lxkYr7WsHwlZpukCazpuUp5qUyEsxHxkrw19cUuy4IGZe')[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/vi
+Completed 302 Found in 249ms (ActiveRecord: 16.8ms | Allocations: 3847)
+
+
+Started GET "/vi" for ::1 at 2021-08-01 16:30:06 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 2.4ms | Allocations: 1100)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1351)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 268)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 26196)
+Completed 200 OK in 73ms (Views: 72.6ms | ActiveRecord: 0.0ms | Allocations: 26706)
+
+
+Started GET "/users/new" for ::1 at 2021-08-01 16:38:36 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1320)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1406)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.1ms | Allocations: 8327)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t('users.new.title')) %>
+<div class ="signup"> 
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1><%= t('users.new.signup')%></h1>
+      <%= form_with(model: @user, local: true) do |f| %>
+        <%= render 'shared/error_messages' %>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation %>
+        <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+):
+1:    <% provide(:title, t('users.new.title')) %>
+2:    <div class ="signup"> 
+3:      <div class="row">
+4:        <div class="col-md-4 col-md-offset-4">
+5:          <h1><%= t('users.new.signup')%></h1>
+6:          <%= form_with(model: @user, local: true) do |f| %>
+7:            <%= render 'shared/error_messages' %>
+8:            <%= f.label :username %>
+9:            <%= f.text_field :username %>
+10:            <%= f.label :email %>
+11:            <%= f.email_field :email %>
+12:            <%= f.label :password %>
+13:            <%= f.password_field :password %>
+14:            <%= f.label :password_confirmation, "Confirmation" %>
+15:            <%= f.password_field :password_confirmation %>
+16:            <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+17:          <% end %>
+18:        </div>
+19:      </div>
+20:    </div>
+  
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+Started GET "/vi" for ::1 at 2021-08-01 16:38:38 +0700
+Processing by StaticPagesController#home as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_sidebar.html.erb (Duration: 3.6ms | Allocations: 1302)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 35.3ms | Allocations: 6569)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.7ms | Allocations: 586)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 586)
+  Rendered layout layouts/application.html.erb (Duration: 124.8ms | Allocations: 32662)
+Completed 200 OK in 131ms (Views: 128.7ms | ActiveRecord: 0.0ms | Allocations: 33705)
+
+
+Started GET "/users/new" for ::1 at 2021-08-01 16:38:44 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1325)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 1413)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t('users.new.title')) %>
+<div class ="signup"> 
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1><%= t('users.new.signup')%></h1>
+      <%= form_with(model: @user, local: true) do |f| %>
+        <%= render 'shared/error_messages' %>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation %>
+        <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+):
+1:    <% provide(:title, t('users.new.title')) %>
+2:    <div class ="signup"> 
+3:      <div class="row">
+4:        <div class="col-md-4 col-md-offset-4">
+5:          <h1><%= t('users.new.signup')%></h1>
+6:          <%= form_with(model: @user, local: true) do |f| %>
+7:            <%= render 'shared/error_messages' %>
+8:            <%= f.label :username %>
+9:            <%= f.text_field :username %>
+10:            <%= f.label :email %>
+11:            <%= f.email_field :email %>
+12:            <%= f.label :password %>
+13:            <%= f.password_field :password %>
+14:            <%= f.label :password_confirmation, "Confirmation" %>
+15:            <%= f.password_field :password_confirmation %>
+16:            <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+17:          <% end %>
+18:        </div>
+19:      </div>
+20:    </div>
+  
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+Started GET "/users/new" for ::1 at 2021-08-01 16:39:49 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1336)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 1422)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2681)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t("users.new.title")) %>
+<div class ="signup"> 
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1><%= t('users.new.signup')%></h1>
+      <%= form_with(model: @user, local: true) do |f| %>
+        <%= render 'shared/error_messages' %>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation %>
+        <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+):
+1:    <% provide(:title, t("users.new.title")) %>
+2:    <div class ="signup"> 
+3:      <div class="row">
+4:        <div class="col-md-4 col-md-offset-4">
+5:          <h1><%= t('users.new.signup')%></h1>
+6:          <%= form_with(model: @user, local: true) do |f| %>
+7:            <%= render 'shared/error_messages' %>
+8:            <%= f.label :username %>
+9:            <%= f.text_field :username %>
+10:            <%= f.label :email %>
+11:            <%= f.email_field :email %>
+12:            <%= f.label :password %>
+13:            <%= f.password_field :password %>
+14:            <%= f.label :password_confirmation, "Confirmation" %>
+15:            <%= f.password_field :password_confirmation %>
+16:            <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+17:          <% end %>
+18:        </div>
+19:      </div>
+20:    </div>
+  
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+Started GET "/users/new" for ::1 at 2021-08-01 16:40:16 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1309)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1397)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 21.0ms | Allocations: 7523)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t("users.new.title")) %>
+<div class ="signup"> 
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1><%= t('users.new.signup')%></h1>
+      <%= form_with(model: @user, local: true) do |f| %>
+        <%= render 'shared/error_messages' %>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation %>
+        <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+):
+1:    <% provide(:title, t("users.new.title")) %>
+2:    <div class ="signup"> 
+3:      <div class="row">
+4:        <div class="col-md-4 col-md-offset-4">
+5:          <h1><%= t('users.new.signup')%></h1>
+6:          <%= form_with(model: @user, local: true) do |f| %>
+7:            <%= render 'shared/error_messages' %>
+8:            <%= f.label :username %>
+9:            <%= f.text_field :username %>
+10:            <%= f.label :email %>
+11:            <%= f.email_field :email %>
+12:            <%= f.label :password %>
+13:            <%= f.password_field :password %>
+14:            <%= f.label :password_confirmation, "Confirmation" %>
+15:            <%= f.password_field :password_confirmation %>
+16:            <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+17:          <% end %>
+18:        </div>
+19:      </div>
+20:    </div>
+  
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+Started GET "/users/new" for ::1 at 2021-08-01 16:40:36 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1336)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1422)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2681)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title, t("users.new.title")) %>
+<div class ="signup"> 
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1><%= t('users.new.signup')%></h1>
+      <%= form_with(model: @user, local: true) do |f| %>
+        <%= render 'shared/error_messages' %>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation %>
+        <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+):
+1:    <% provide(:title, t("users.new.title")) %>
+2:    <div class ="signup"> 
+3:      <div class="row">
+4:        <div class="col-md-4 col-md-offset-4">
+5:          <h1><%= t('users.new.signup')%></h1>
+6:          <%= form_with(model: @user, local: true) do |f| %>
+7:            <%= render 'shared/error_messages' %>
+8:            <%= f.label :username %>
+9:            <%= f.text_field :username %>
+10:            <%= f.label :email %>
+11:            <%= f.email_field :email %>
+12:            <%= f.label :password %>
+13:            <%= f.password_field :password %>
+14:            <%= f.label :password_confirmation, "Confirmation" %>
+15:            <%= f.password_field :password_confirmation %>
+16:            <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+17:          <% end %>
+18:        </div>
+19:      </div>
+20:    </div>
+  
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+Started GET "/users/new" for ::1 at 2021-08-01 16:40:49 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1334)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1420)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2680)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% provide(:title) %>
+<div class ="signup"> 
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1><%= t('users.new.signup')%></h1>
+      <%= form_with(model: @user, local: true) do |f| %>
+        <%= render 'shared/error_messages' %>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation %>
+        <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+):
+1:    <% provide(:title) %>
+2:    <div class ="signup"> 
+3:      <div class="row">
+4:        <div class="col-md-4 col-md-offset-4">
+5:          <h1><%= t('users.new.signup')%></h1>
+6:          <%= form_with(model: @user, local: true) do |f| %>
+7:            <%= render 'shared/error_messages' %>
+8:            <%= f.label :username %>
+9:            <%= f.text_field :username %>
+10:            <%= f.label :email %>
+11:            <%= f.email_field :email %>
+12:            <%= f.label :password %>
+13:            <%= f.password_field :password %>
+14:            <%= f.label :password_confirmation, "Confirmation" %>
+15:            <%= f.password_field :password_confirmation %>
+16:            <%= f.submit <%= t('users.new.create')%>, class: "btn btn-primary" %>
+17:          <% end %>
+18:        </div>
+19:      </div>
+20:    </div>
+  
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/users/new.html.erb:23: syntax error, unexpected end, expecting ')'
+Started GET "/users/new" for ::1 at 2021-08-01 16:41:52 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 212)
+  Rendered users/new.html.erb within layouts/application (Duration: 24.4ms | Allocations: 6253)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 572)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 586)
+  Rendered layout layouts/application.html.erb (Duration: 114.8ms | Allocations: 32444)
+Completed 200 OK in 122ms (Views: 119.6ms | ActiveRecord: 0.0ms | Allocations: 33730)
+
+
+Started GET "/users/new" for ::1 at 2021-08-01 16:42:58 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered users/new.html.erb within layouts/application (Duration: 24.2ms | Allocations: 5667)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 321)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 267)
+  Rendered layout layouts/application.html.erb (Duration: 125.6ms | Allocations: 30662)
+Completed 200 OK in 138ms (Views: 126.7ms | ActiveRecord: 4.6ms | Allocations: 36817)
+
+
+Started GET "/users/new" for ::1 at 2021-08-01 16:43:36 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 212)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1640)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 511)
+  Rendered layouts/_footer.html.erb (Duration: 1.6ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 76.9ms | Allocations: 27763)
+Completed 200 OK in 85ms (Views: 81.8ms | ActiveRecord: 0.0ms | Allocations: 29049)
+
+
+Started GET "/users/new" for ::1 at 2021-08-01 16:44:05 +0700
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 212)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1584)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 516)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 101.5ms | Allocations: 27712)
+Completed 200 OK in 108ms (Views: 106.0ms | ActiveRecord: 0.0ms | Allocations: 28993)
+
+
+>>>>>>> 4ea9fca... Basic Sign Up
