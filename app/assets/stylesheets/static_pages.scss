@@ -1,0 +1,1325 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+/*
+Copyright (c) 2018 Himanshu Softtech.
+------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Educo
+Version:	3.0.0
+Assigned to:	Themeforest
+-------------------------------------------------------------------
+[Table of contents]
+1. Body
+2. Normal css / .ed_toppadder10
+3. Header Top / #educo_wrapper
+4. Header Bottom / .ed_header_bottom
+5. Main Menu / .edoco_menu
+6. Sub Menu / .edoco_menu ul li ul
+7. Main Slider / .ed_slider_form_section
+8. Search form/ .ed_form_box
+9. Populer Areas Section / .ed_transprentbg
+12. Most Recent Course Section / .ed_mostrecomeded_course_slider
+15. Footer Top / .ed_footer_wrapper
+16. Footer Bottom / .ed_footer_bottom
+17. Breadcrumb / .ed_pagetitle
+18. Index2 Page / .ed_counter_wrapper
+26. Course Page / .ed_courses
+38. Responsive Css / .edoco_menu
+*/
+
+/* --------- Body Strat ------- */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #717171;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #272727;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #717171;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Trirong", serif;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #202020;
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  outline: none;
+  border-radius: 3px !important;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+textarea {
+  outline: none;
+  border-radius: 3px !important;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.ed_toppadder10 {
+  padding-top: 10px;
+}
+
+.ed_toppadder20 {
+  padding-top: 20px;
+}
+
+.ed_toppadder30 {
+  padding-top: 30px;
+}
+
+.ed_toppadder40 {
+  padding-top: 40px;
+}
+
+.ed_toppadder50 {
+  padding-top: 50px;
+}
+
+.ed_toppadder60 {
+  padding-top: 60px;
+}
+
+.ed_toppadder70 {
+  padding-top: 70px;
+}
+
+.ed_toppadder80 {
+  padding-top: 80px;
+}
+
+.ed_toppadder90 {
+  padding-top: 90px;
+}
+
+.ed_toppadder100 {
+  padding-top: 100px;
+}
+
+.ed_bottompadder10 {
+  padding-bottom: 10px;
+}
+
+.ed_bottompadder20 {
+  padding-bottom: 20px;
+}
+
+.ed_bottompadder30 {
+  padding-bottom: 30px;
+}
+
+.ed_bottompadder40 {
+  padding-bottom: 40px;
+}
+
+.ed_bottompadder50 {
+  padding-bottom: 50px;
+}
+
+.ed_bottompadder60 {
+  padding-bottom: 60px;
+}
+
+.ed_bottompadder70 {
+  padding-bottom: 70px;
+}
+
+.ed_bottompadder80 {
+  padding-bottom: 0;
+}
+
+.ed_bottompadder90 {
+  padding-bottom: 90px;
+}
+
+.ed_bottompadder100 {
+  padding-bottom: 100px;
+}
+
+/* ----------Normal css end------- */
+
+/* ----------Header Top start---------- */
+.ed_info_wrapper {
+  float: right;
+  width: 50%;
+  text-align: right;
+  position: relative;
+
+  a {
+    padding: 7px 30px;
+    color: #167ac6;
+    text-decoration: none;
+    background-color: #fff;
+    margin: 0;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #167ac6;
+      border: 2px solid #fff;
+      color: #fff;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    &:focus {
+      color: #fff;
+      background-color: #167ac6;
+      border: 2px solid #fff;
+      outline: none;
+    }
+  }
+}
+
+.ed_footer_menu {
+  float: left;
+  width: 100%;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+
+    li {
+      float: left;
+      list-style: none;
+      margin: 0 15px;
+
+      a {
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+
+        &:hover {
+          color: #167ac6;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}
+
+#educo_wrapper {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+#ed_header_wrapper {
+  float: left;
+  width: 100%;
+  z-index: 100;
+}
+
+.ed_header_top {
+  width: 100%;
+  float: left;
+  background-color: #167ac6;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 15px 0;
+
+  p {
+    margin: 0;
+    width: 50%;
+    float: left;
+    text-transform: capitalize;
+  }
+}
+
+.course_faculty a::before {
+  text-transform: uppercase;
+  color: #272727;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.curly-quotes {
+  border-bottom: 1px solid black;
+}
+
+.ed_login_form {
+  position: absolute;
+  right: 0%;
+  top: 170%;
+  padding: 15px;
+  border-radius: 0;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  display: none;
+  z-index: 1000;
+
+  button {
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    background-color: #167ac6;
+    font-size: 12px;
+    padding: 10px 28px;
+    margin-right: 5px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #167ac6;
+      color: #fff;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+}
+
+/* ---------HeaderTopend----------- */
+
+/* -----------HeaderBottom start--------- */
+.ed_header_bottom {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+}
+
+.educo_logo {
+  float: left;
+  width: 100%;
+  padding-top: 20px;
+
+  a {
+    display: inline-block;
+  }
+}
+
+.educo_call {
+  float: left;
+  width: 100%;
+  padding-top: 32px;
+  text-align: right;
+
+  i {
+    color: #167ac6;
+    padding-right: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #202020;
+    font-weight: 700;
+    cursor: text;
+  }
+}
+
+.menu_fixed {
+  position: fixed;
+  z-index: 1000;
+  padding: 00;
+  -moz-box-shadow: 0 -5px 20px;
+  -webkit-box-shadow: 0 -5px 20px;
+  box-shadow: 0 -5px 20px;
+}
+
+.edoco_menu_toggle {
+  width: 100%;
+  padding: 10px 15px;
+  background: #167ac6;
+  cursor: pointer;
+  margin: 0;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 16px;
+
+  i {
+    float: right;
+    font-size: 25px;
+  }
+}
+
+/* ------ HeaderBottomend----------- */
+
+/* --------menustart---------- */
+.ed_tabs_left > .nav-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 0;
+  border-right: 0 solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+/* ---------------------menuend--------------------- */
+
+/* ------------------Submenuend----------------- */
+
+/* ---------- Slider start --------- */
+.ed_slider_form_section {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+/* --------- Slider end --------- */
+
+/* --------- Search form start -------- */
+.ed_form_box {
+  float: left;
+  width: 100%;
+  position: absolute;
+  bottom: -70px;
+}
+
+.ed_search_form {
+  float: left;
+  width: 100%;
+  background-color: #167ac6;
+  padding: 50px;
+  border-radius: 3px;
+
+  form input {
+    &:-moz-placeholder::before {
+      color: #fff;
+      text-transform: capitalize;
+    }
+
+    &:-ms-input-placeholder::before {
+      color: #fff;
+      text-transform: capitalize;
+    }
+
+    &:-webkit-input-placeholder::before {
+      color: #fff;
+      text-transform: capitalize;
+    }
+  }
+
+  .form-inline {
+    float: left;
+    width: 100%;
+
+    .form-control {
+      border: 2px solid #fff;
+      background-color: #167ac6;
+      padding: 0 15px;
+      color: #fff;
+      float: left;
+      width: 100%;
+      font-size: 14px;
+      height: 45px;
+      text-align: left;
+    }
+
+    .form-group {
+      width: 19.7%;
+      padding: 00;
+    }
+
+    .ed_orange {
+      width: 100%;
+      padding: 11px 0;
+    }
+  }
+}
+
+.ed_btn {
+  border-radius: 3px;
+  padding: 12px 44px;
+  text-transform: capitalize;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  z-index: 1;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 100%;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  }
+}
+
+/* --------- Search form end --------- */
+
+/* -------- Populer Areas Section start -------- */
+.ed_transprentbg {
+  float: left;
+  width: 100%;
+}
+
+.ed_heading_top {
+  text-align: center;
+  float: left;
+  width: 100%;
+
+  h3 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+    margin-top: 50px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 30px;
+      height: 0;
+      border-bottom: 6px double #fff;
+      border-radius: 100px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 80px;
+      height: 8px;
+      background-color: #167ac6;
+      border-radius: 100px;
+    }
+  }
+}
+
+.ed_populer_areas_slider {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  float: left;
+  width: 100%;
+  min-height: 321px;
+
+  .owl-carousel .owl-nav .owl-prev {
+    top: -25%;
+    font-size: 32px;
+    background: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #167ac6;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.ed_populer_areas_slider .owl-carousel .owl-nav .owl-prev i::after {
+  font-weight: bold;
+}
+
+.ed_populer_areas_slider .owl-carousel .owl-nav .owl-next {
+  top: -25%;
+  font-size: 32px;
+  background: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #167ac6;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+.ed_populer_areas_slider .owl-carousel .owl-nav .owl-next i {
+  font-weight: bold;
+}
+
+.ed_populer_areas_slider .owl-theme .owl-nav [class*="owl-"] {
+  color: #000;
+  padding: 00;
+  font-size: 20px;
+}
+
+.ed_populer_areas_slider .owl-height {
+  min-height: 321px;
+}
+
+.ed_item_img {
+  overflow: hidden;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::before {
+    border-radius: 100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    right: 100%;
+    bottom: 100%;
+    border-radius: 100%;
+    background-color: rgba(22, 122, 198, 0.6);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+.owl-carousel .owl-item:hover .ed_item_img::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(22, 122, 198, 0.6);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ed_courses .ed_mostrecomeded_course:hover .ed_item_img::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(22, 122, 198, 0.6);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ed_populer_areas_slider .ed_item_description {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.ed_most_recomended_data h4 {
+  text-transform: capitalize;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin: 0000;
+
+  a {
+    font-size: 18px;
+    color: #272727;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  span {
+    float: right;
+  }
+}
+
+.ed_populer_areas_slider .ed_item_description h4 {
+  text-transform: capitalize;
+}
+
+a.ed_getinvolved {
+  text-decoration: none;
+  font-size: 14px;
+  color: #272727;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #167ac6;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+/* --------- Populer areas section end ------ */
+.ed_mostrecomededcourseslider .owl-height {
+  min-height: 443px;
+}
+
+.course_faculty img {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  -moz-box-shadow: 00 6px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 00 6px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 00 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+.ed_mostrecomeded_course_slider .ed_most_recomended_data .rating {
+  border-bottom: 1px solid #ddd;
+  padding: 0000;
+  margin-bottom: 10px;
+}
+
+/* ---------- most recent course section end ---------- */
+
+/* Note css */
+.notepaper {
+  position: relative;
+  line-height: 30px;
+  height: 300px;
+  color: #6a5f49;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-shadow: 0 1px 1px white;
+  background-color: #f2f6c1;
+  background-image:
+    -webkit-radial-gradient(center, cover, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1) 90%),
+    -webkit-repeating-linear-gradient(top, transparent, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image:
+    -moz-radial-gradient(center, cover, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1) 90%),
+    -moz-repeating-linear-gradient(top, transparent, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image:
+    -o-radial-gradient(center, cover, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1) 90%),
+    -o-repeating-linear-gradient(top, transparent, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  border: 1px solid #c3baaa;
+  border-color: rgba(195, 186, 170, 0.9);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.5),
+    inset 0 0 5px #d8e071,
+    0 0 1px rgba(0, 0, 0, 0.1),
+    0 2px rgba(0, 0, 0, 0.02);
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.5),
+    inset 0 0 5px #d8e071,
+    0 0 1px rgba(0, 0, 0, 0.1),
+    0 2px rgba(0, 0, 0, 0.02);
+
+  &::before,
+  ::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    left: 28px;
+    width: 2px;
+    border: solid #efcfad;
+    border-color: rgba(239, 207, 173, 0.9);
+    border-width: 0 1px;
+  }
+
+  &::after {
+    z-index: -1;
+    left: 0;
+    right: 0;
+    background: rgba(242, 246, 193, 0.9);
+    border: 1px solid rgba(170, 157, 134, 0.7);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+
+/* Note css end */
+
+/* ------ instructor Single Page Start ---------  */
+.ed_dashboard_wrapper {
+  float: left;
+  width: 100%;
+  background: #edf2f6;
+  padding: 70px 0;
+}
+
+.ed_sidebar_wrapper {
+  float: left;
+  width: 100%;
+  border-bottom: 0 solid #ddd;
+  margin-bottom: 30px;
+  background-color: #fff;
+
+  h3 {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    text-transform: capitalize;
+  }
+
+  p {
+    padding: 0 10px;
+    text-transform: capitalize;
+    float: left;
+    width: 100%;
+    font-style: italic;
+
+    span {
+      color: #000;
+      font-style: initial;
+    }
+  }
+}
+
+.ed_profile_img {
+  width: 100%;
+  background-color: #ccc;
+  float: left;
+}
+
+.ed_dashboard_tab .tab-content {
+  float: left;
+  width: 100%;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tabcon {
+  padding-bottom: 20px;
+  border-bottom: solid 1px #202020;
+  padding-top: 10px;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.ed_dashboard_inner_tab {
+  float: left;
+  width: 100%;
+  background-color: #fff;
+
+  h2 {
+    text-transform: capitalize;
+    margin: 00 30px 0;
+    font-size: 24px;
+  }
+
+  strong {
+    color: #272727;
+  }
+
+  table {
+    width: 100%;
+    border: 1px solid #272727;
+    margin: 20px 0;
+
+    thead {
+      border: 1px solid #272727;
+    }
+
+    th {
+      color: #272727;
+      border-bottom: 1px solid #272727;
+      padding: 5px 10px;
+    }
+
+    td {
+      color: #272727;
+      border-bottom: 1px solid #272727;
+      padding: 5px 10px;
+
+      a {
+        color: #167ac6;
+        text-decoration: none;
+
+        &:hover {
+          color: #167ac6;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    float: left;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+
+  select {
+    float: right;
+    margin-top: 10px;
+    border-color: #ddd;
+
+    &:focus {
+      border-color: #ddd;
+      outline: none;
+    }
+  }
+
+  .section_eleven {
+    padding: 20px 000;
+  }
+}
+
+.edoco_menu {
+  display: inline-block;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      position: relative;
+
+      a {
+        display: inline-block;
+        padding: 30px 30px 30px 0;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #3c3d49;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+
+        &:hover {
+          color: #167ac6;
+        }
+      }
+    }
+  }
+
+  .navbar-collapse.in {
+    overflow: inherit;
+  }
+}
+
+.ed_inner_dashboard_info {
+  float: left;
+  width: 100%;
+
+  .ed_mostrecomeded_course_slider .ed_item_description {
+    min-height: 225px;
+  }
+
+  .ed_tabpersonal {
+    float: left;
+    width: 100%;
+
+    textarea.form-control {
+      padding: 10px 15px;
+      height: auto;
+    }
+
+    .form-group {
+      float: left;
+      width: 100%;
+    }
+  }
+
+  h2 {
+    text-transform: capitalize;
+    margin: 00 30px 0;
+    font-size: 24px;
+  }
+
+  strong {
+    color: #272727;
+  }
+}
+
+.ed_course_single_info {
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+/* ------ instructor Single Page end ---------  */
+
+/* --------- student detail page start ------- */
+.ed_dashboard_tab_info {
+  float: left;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+
+  h1 {
+    text-transform: capitalize;
+    margin: 30px 0;
+  }
+
+  p strong {
+    text-transform: uppercase;
+    color: #167ac6;
+
+    span::before {
+      text-transform: uppercase;
+      color: #167ac6;
+    }
+  }
+}
+
+/* ------- Footer top start -------- */
+.ed_footer_wrapper {
+  float: left;
+  width: 100%;
+}
+
+.ed_footer_top {
+  float: left;
+  width: 100%;
+  background-color: #202020;
+  padding: 55px 0 30px 0;
+}
+
+.widget.text-widget {
+  float: left;
+  width: 100%;
+}
+
+.ed_sociallink {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      float: left;
+      margin-bottom: 30px;
+
+      a {
+        color: #fff;
+        margin: 0 10px;
+        font-size: 18px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+.text-widget {
+  h4.widget-title {
+    color: #edf2f6;
+    font-size: 22px;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 65px;
+    margin-top: 0;
+    font-weight: normal;
+    padding-bottom: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0%;
+      width: 70px;
+      height: 2px;
+      background-color: #cacaca;
+      margin: 8px auto;
+    }
+  }
+
+  p {
+    color: #cacaca;
+    margin-bottom: 25px;
+  }
+
+  a {
+    color: #cacaca;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #167ac6;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+}
+
+/* -------- Footer top end --------- */
+
+/* --------- Footer bottom start --------- */
+.ed_footer_bottom {
+  float: left;
+  width: 100%;
+  padding: 30px 0;
+  background-color: #101010;
+}
+
+.ed_copy_right {
+  float: left;
+  width: 100%;
+  padding-bottom: 0;
+
+  p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #167ac6;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+/* ------- Footer bottom end -------- */
+
+/* ----------- index2 start ------- */
+.ed_counter_wrapper {
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  padding: 70px;
+}
+
+.ed_counter {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+
+  h2 {
+    font-size: 26px;
+    position: relative;
+    margin: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #167ac6;
+    border: 2px solid transparent;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  &:hover h2 {
+    background-color: #fff;
+    color: #167ac6;
+    border: 2px solid #167ac6;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  h4::before {
+    margin: 25px 0 10px 0;
+    text-transform: capitalize;
+  }
+}
+
+.ed_mostrecomeded_course {
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-bottom: 50px;
+
+  &:hover {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -moz-box-shadow: 0 5px 20px -8px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 5px 20px -8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px -8px rgba(0, 0, 0, 0.5);
+  }
+
+  .ed_most_recomended_data {
+    padding: 0;
+  }
+}
+
+/* ----------- index2 end ------- */
+
+/* ------- course page start --------- */
+.ed_courses {
+  float: left;
+  width: 100%;
+  background-color: #edf2f6;
+
+  .ed_most_recomended_data .course_faculty {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .ed_mostrecomeded_course {
+    margin-bottom: 30px;
+  }
+
+  .ed_blog_bottom_pagination {
+    margin-top: 30px;
+  }
+}
+
+/* ------- course page end --------- */
