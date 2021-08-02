@@ -1,6 +1,16 @@
 class UsersController < ApplicationController
+  before_action :found_user, only: [:show]
+  def found_user
+    @user = User.find_by(id: session[:user_id])
+    if @user
+      return @user
+    else
+      flash[:danger] = t('errors.not_login')
+      redirect_to login_path
+    end
+  end
   def show
-    @user = User.find(params[:id])
+    
   end
   def new
     @user =User.new

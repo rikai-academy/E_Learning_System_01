@@ -1,8 +1,12 @@
 en:
+  errors:
+    fail_login: 'Invalid email/password combination'
+    not_login:  'Please login!'
   layouts:
     header:
       hi: 'welcome to E-Learning'
       login:  'Log In'
+      logout: 'Log out'
       home: 'Home'
       about:  'About Us'
       courses:  'Courses'

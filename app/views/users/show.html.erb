@@ -9,9 +9,9 @@
             <div class="tab-pane active" id="dasboard">
               <div class="ed_dashboard_tab_info">
                 <div class = "tabcon">
-                  <h1><%= t('static_pages.home.hello')%>, <span>name</span></h1>
+                  <h1><%= t('static_pages.home.hello')%>, <span><%= @user.username%></span></h1>
                   <h1><%= t('static_pages.home.wellcome')%></h1>
-                  <p><%= t('static_pages.home.hi')%> <strong>name</strong><%= t('static_pages.home.content')%>
+                  <p><%= t('static_pages.home.hi')%> <strong><span><%= @user.username%></strong><%= t('static_pages.home.content')%>
                   </p>
                 </div>                
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style ="padding-top: 50px">
