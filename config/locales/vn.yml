@@ -1,8 +1,12 @@
 vi:
+  errors:
+      fail_login: 'Tài khoản hoặc mật khẩu không đúng'
+      not_login:  'Hãy đăng nhập!'
   layouts:
     header:
       hi: 'Chào mừng tới E-Learning'
       login:  'Đăng nhập'
+      logout: 'Đăng xuất'
       home: 'Trang Chủ'
       about:  'Về chúng tôi'
       courses:  'Khóa học'
@@ -51,3 +55,9 @@ vi:
       create: 'Tạo tài khoản'
       password: 'Mật khẩu'
       confirm:  'Xác nhận mật khẩu'
+  session:
+    new:
+      title:  'Đăng nhập'
+      new_user: 'Bạn là người mới ?'
+      signup: 'Đăng ký ngay!'
+      username: 'Username hoặc Email'
