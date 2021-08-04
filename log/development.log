@@ -2782,3 +2782,203 @@ Started GET "/vi/images/footer/F_Logo.png" for ::1 at 2021-08-02 15:35:38 +0700
   
 ActionController::RoutingError (No route matches [GET] "/vi/images/footer/F_Logo.png"):
   
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('3130052965522379190', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddOmniauthToUsers (20210804065448)
+  [1m[35m (90.2ms)[0m  [1m[35mALTER TABLE `users` ADD `provider` varchar(255)[0m
+  [1m[35m (49.4ms)[0m  [1m[35mALTER TABLE `users` ADD `uid` varchar(255)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20210804065448')[0m
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('3130052965522379190')[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/resgistration" for ::1 at 2021-08-04 14:24:26 +0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 238)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 793)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 73.1ms | Allocations: 12927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 714)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 668)
+  Rendered layout layouts/application.html.erb (Duration: 445.0ms | Allocations: 116731)
+Completed 200 OK in 533ms (Views: 481.5ms | ActiveRecord: 6.4ms | Allocations: 131210)
+
+
+Started GET "/resgistration" for ::1 at 2021-08-04 14:24:27 +0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 46)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 273)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1299)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 86.6ms | Allocations: 26579)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.0ms | Allocations: 30052)
+
+
+Started POST "/auth/facebook?locale=vi" for ::1 at 2021-08-04 14:24:29 +0700
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "locale"=>"vi"}
+Redirected to http://localhost:3000/vi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 330)
+
+
+Started GET "/vi" for ::1 at 2021-08-04 14:24:29 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (Duration: 0.4ms | Allocations: 176)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 264)
+  Rendered layout layouts/application.html.erb (Duration: 81.0ms | Allocations: 26541)
+Completed 200 OK in 88ms (Views: 85.3ms | ActiveRecord: 0.0ms | Allocations: 27737)
+
+
+Started GET "/vi" for ::1 at 2021-08-04 14:28:36 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 667)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 347)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 293)
+  Rendered layout layouts/application.html.erb (Duration: 101.1ms | Allocations: 26057)
+Completed 200 OK in 105ms (Views: 104.0ms | ActiveRecord: 0.0ms | Allocations: 26778)
+
+
+Started GET "/resgistration" for ::1 at 2021-08-04 14:28:39 +0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 46)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 288)
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1358)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 290)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 264)
+  Rendered layout layouts/application.html.erb (Duration: 102.4ms | Allocations: 26660)
+Completed 200 OK in 115ms (Views: 103.7ms | ActiveRecord: 5.0ms | Allocations: 33540)
+
+
+Started POST "/auth/facebook?locale=vi" for ::1 at 2021-08-04 14:28:47 +0700
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "locale"=>"vi"}
+Redirected to http://localhost:3000/vi
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/vi" for ::1 at 2021-08-04 14:28:47 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 599)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 283)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 90.2ms | Allocations: 25913)
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.0ms | Allocations: 26434)
+
+
+Started GET "/vi" for ::1 at 2021-08-04 14:30:33 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (Duration: 0.4ms | Allocations: 168)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 565)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 84.9ms | Allocations: 27605)
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 0.0ms | Allocations: 28978)
+
+
+Started GET "/vi" for ::1 at 2021-08-04 14:33:48 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (Duration: 0.4ms | Allocations: 168)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 625)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 611)
+  Rendered layout layouts/application.html.erb (Duration: 83.9ms | Allocations: 27745)
+Completed 200 OK in 92ms (Views: 89.7ms | ActiveRecord: 0.0ms | Allocations: 29173)
+
+
+Started GET "/vi" for ::1 at 2021-08-04 14:34:57 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (Duration: 0.5ms | Allocations: 168)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.9ms | Allocations: 565)
+  Rendered layouts/_footer.html.erb (Duration: 2.4ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 89.9ms | Allocations: 27693)
+Completed 200 OK in 103ms (Views: 101.4ms | ActiveRecord: 0.0ms | Allocations: 29064)
+
+
+Started GET "/vi" for ::1 at 2021-08-04 14:35:07 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (Duration: 0.5ms | Allocations: 168)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 570)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 112.9ms | Allocations: 27709)
+Completed 200 OK in 122ms (Views: 119.1ms | ActiveRecord: 0.0ms | Allocations: 29079)
+
+
+Started GET "/auth/facebook?locale=vi" for ::1 at 2021-08-04 14:35:09 +0700
+Processing by OmniauthCallbacksController#passthru as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 26)
+Completed 404 Not Found in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 692)
+
+
+Started GET "/vi" for ::1 at 2021-08-04 14:35:55 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/vi"):
+  
+Started GET "/vi" for ::1 at 2021-08-04 14:36:14 +0700
+Processing by SessionsController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (Duration: 0.1ms | Allocations: 53)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 348)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 293)
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 26168)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.0ms | Allocations: 26896)
+
+
+Started GET "/auth/facebook?locale=vi" for ::1 at 2021-08-04 14:36:16 +0700
+Processing by OmniauthCallbacksController#passthru as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 26)
+Completed 404 Not Found in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 611)
+
+

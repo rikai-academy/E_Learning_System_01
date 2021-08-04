@@ -9,5 +9,9 @@ Rails.application.routes.draw do
     post '/login',        to: 'sessions#create'
     delete '/logout',     to: 'sessions#destroy'
   end
+  devise_for :users,
+              path: '',
+              path_names: {sign_in: 'login' ,sign_out: 'logout' ,edit: 'profile',sign_up: 'resgistration'},
+              controllers: {omniauth_callbacks: 'omniauth_callbacks' }
   resources :users
 end
