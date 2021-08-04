@@ -537,9 +537,9 @@ textarea {
     position: relative;
     display: inline-block;
     width: 100%;
-    margin: 0;
     padding-bottom: 15px;
     text-transform: capitalize;
+    margin-top: 50px;
 
     &::after {
       position: absolute;
@@ -1279,6 +1279,7 @@ a.ed_getinvolved {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  margin-bottom: 50px;
 
   &:hover {
     -webkit-transition: all 0.3s;
