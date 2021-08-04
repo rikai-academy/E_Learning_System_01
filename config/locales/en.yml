@@ -56,3 +56,13 @@ en:
       create: 'Create my account'
       password: 'Password'
       confirm:  'Password Confirmation'
+    edit:
+      resetpass:  'Reset Password'
+      profile:  'Profile'
+      update_profile: 'Update Profile'
+    profile:
+      fullname: 'Full Name :'
+      Sex:  'Sex :'
+      address:  'Address :'
+      phone:  'Phone :'
+      courses:  'Courses :'

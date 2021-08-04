@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
     root 'sessions#new'
+    get '/edit',          to: 'users#edit'
     get '/home',          to: 'users#show'
     get '/signup',        to: 'users#new'
     get '/cate',          to: 'static_pages#categories'

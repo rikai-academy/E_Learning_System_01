@@ -55,3 +55,13 @@ vi:
       create: 'Tạo tài khoản'
       password: 'Mật khẩu'
       confirm:  'Xác nhận mật khẩu'
+    edit:
+      resetpass:  'Thay đổi mật khẩu'
+      profile:  'Hồ sơ'
+      update_profile: 'Cập nhật hồ sơ'
+    profile:
+      fullname: 'Họ và tên :'
+      Sex:  'Giới tính :'
+      address:  'Địa chỉ :'
+      phone:  'Số điện thoại :'
+      courses:  'Khóa học :'

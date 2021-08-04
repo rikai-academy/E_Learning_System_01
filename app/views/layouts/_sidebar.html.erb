@@ -1,15 +1,25 @@
 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
   <div class="ed_sidebar_wrapper">
     <div class="ed_profile_img">
-      <%= image_tag "23.png" %>
+      <% if @user.user_profile.image.attached? %>
+          <%= image_tag  @user.user_profile.image  %>
+        <%else%>
+          <%= image_tag "23.png" %>
+      <%end%>
     </div>
-    <h3><span><%= @user.username%></h3>
+    <h3>
+      <% if @user.user_profile.fullname.nil? %>
+          <%= @user.username%>
+      <%else%>
+          <%=@user.user_profile.fullname %>
+      <%end%>
+    </h3>
     <div class="ed_tabs_left">
       <ul class="nav nav-tabs">
         <li class="active"><%= link_to t('layouts.header.home'), "#dasboard", { :class => '', 'data-toggle' => 'tab' } %></li>
         <li><%= link_to t('layouts.sidebar.wordlist'), "#wordlist", { :class => '', 'data-toggle' => 'tab' } %></li>
         <li><%= link_to t('layouts.sidebar.activity'), "#", { :class => '', 'data-toggle' => 'tab' } %></li>
-        <li><%= link_to t('layouts.sidebar.profile'), "#", { :class => '', 'data-toggle' => 'tab' } %></li>
+        <li><%= link_to t('layouts.sidebar.profile'), "#profile", { :class => '', 'data-toggle' => 'tab' } %></li>
       </ul>
     </div>
   </div>

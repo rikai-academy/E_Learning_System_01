@@ -9,9 +9,21 @@
             <div class="tab-pane active" id="dasboard">
               <div class="ed_dashboard_tab_info">
                 <div class = "tabcon">
-                  <h1><%= t('static_pages.home.hello')%>, <span><%= @user.username%></span></h1>
+                  <h1><%= t('static_pages.home.hello')%>, <span>
+                    <% if @user.user_profile.fullname.nil? %>
+                      <%= @user.username%>
+                    <%else%>
+                      <%=@user.user_profile.fullname %>
+                    <%end%>
+                  </span></h1>
                   <h1><%= t('static_pages.home.wellcome')%></h1>
-                  <p><%= t('static_pages.home.hi')%> <strong><span><%= @user.username%></strong><%= t('static_pages.home.content')%>
+                  <p><%= t('static_pages.home.hi')%> <strong><span>
+                    <% if @user.user_profile.fullname.nil? %>
+                      <%= @user.username%>
+                    <%else%>
+                      <%=@user.user_profile.fullname %>
+                    <%end%>
+                  </strong><%= t('static_pages.home.content')%>
                   </p>
                 </div>                
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style ="padding-top: 50px">
@@ -104,6 +116,32 @@
                   </div>
                  </div> 
               </div>
+              
+            </div>
+            <div class="tab-pane" id="profile">
+               
+                <div class="col-md-12 ed_dashboard_tab_info"> 
+                  <div class = "col-md-6">                     
+                    <p>UserName:</p>
+                    <p>Email: </p>
+                    <p><%= t("users.profile.fullname")%></p>
+                    <p><%= t("users.profile.sex")%></p>
+                    <p><%= t("users.profile.address")%></p>
+                    <p><%= t("users.profile.phone")%></p>
+                    <p><%= t("users.profile.courses")%></p>
+                  </div>
+                  <div class = "col-md-6">                     
+                    <p><%= @user.username%></p>
+                    <p><%= @user.email%></p>
+                    <p><%= @user.user_profile.fullname%></p>
+                    <p><%= @user.user_profile.sex%></p>
+                    <p><%= @user.user_profile.address%></p>
+                    <p><%= @user.user_profile.phone%></p>
+                    <p>13</p>
+                  </div>
+                  <%= link_to t('users.edit.update_profile'), edit_path, class: "btn btn-primary"%>
+                </div> 
+                
             </div>
           </div>
         </div>
