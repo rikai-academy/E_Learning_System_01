@@ -1,66 +1,90 @@
 <div class="ed_footer_wrapper">
-	<div class="ed_footer_top">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="widget text-widget">
-						<p><a href="#"><img src="images/footer/F_Logo.png" alt="Footer Logo" /></a></p>
-						<p><%= t('layouts.footer.elearning_about')%>
-						</p>
-						<div class="ed_sociallink">
-						<ul>
-							<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-							<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-						</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="widget text-widget">
-						<h4 class="widget-title"><%= t('layouts.footer.find')%></h4>
-						<p><i class="fa fa-safari"></i>Wimbledon Street 42a, 45290 Wimbledon, <br/>United Kingdom</p>
-						<p><i class="fa fa-envelope-o"></i><a href="#">leduyvuong99@gmail.com</a> <a href="#">leduyvuong99@gmail.com</a></p>
-						<p><i class="fa fa-phone"></i> 1-220-090-080</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="widget text-widget">
-						<h4 class="widget-title"><%= t('layouts.footer.social')%></h4>
-						<p><strong>@education </strong><%= t('layouts.footer.educate')%><a href="#"> http://t.co/KFDdzLSD9</a><br/>2 days <%= t('layouts.footer.ago')%></p>
-						
-						<p><strong>@educationUK </strong><%= t('layouts.footer.design')%><a href="#">http://t.co/9j8DH93zrO</a><br/>5 days  <%= t('layouts.footer.ago')%></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="ed_footer_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="widget text-widget">
+            <p><a href="#"><img src="images/footer/F_Logo.png" alt="Footer Logo" /></a></p>
+            <p>
+              <%= t('layouts.footer.elearning_about')%>
+            </p>
+            <div class="ed_sociallink">
+              <ul>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"
+                      aria-hidden="true"></i></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Google+"><i
+                      class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"
+                      aria-hidden="true"></i></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"
+                      aria-hidden="true"></i></a></li>
+                <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i class="fa fa-whatsapp"
+                      aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="widget text-widget">
+            <h4 class="widget-title">
+              <%= t('layouts.footer.find')%>
+            </h4>
+            <p><i class="fa fa-safari"></i>Wimbledon Street 42a, 45290 Wimbledon, <br />United Kingdom</p>
+            <p><i class="fa fa-envelope-o"></i><a href="#">leduyvuong99@gmail.com</a> <a
+                href="#">leduyvuong99@gmail.com</a></p>
+            <p><i class="fa fa-phone"></i> 1-220-090-080</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="widget text-widget">
+            <h4 class="widget-title">
+              <%= t('layouts.footer.social')%>
+            </h4>
+            <p><strong>@education </strong>
+              <%= t('layouts.footer.educate')%><a href="#"> http://t.co/KFDdzLSD9</a><br />2 days <%=
+                  t('layouts.footer.ago')%>
+            </p>
+            <p><strong>@educationUK </strong>
+              <%= t('layouts.footer.design')%><a href="#">http://t.co/9j8DH93zrO</a><br />5 days <%=
+                  t('layouts.footer.ago')%>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!--Footer Top section end-->
 <!--Footer Bottom section start-->
 <div class="ed_footer_bottom">
-	<div class="container">
-		<div class="col-lg-12 col-md-12 col-sm-12">
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<div class="ed_copy_right" style= "text-align: center">
-					<p>&copy; Copyright 2018, All Rights Reserved, <a href="#">EDUCO</a></p>
-          <p >Rewrite By Leduyvuong</p>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<div class="ed_footer_menu">
-						<ul>
-							<li><%= link_to t('layouts.header.home'), root_path %></li>
-							<li><%= link_to t('layouts.footer.private'), "#" %></li>
-							<li><%= link_to t('layouts.header.about'), "#" %></li>
-							<li><%= link_to t('layouts.header.contact'), "#" %></a></li>
-						</ul>
-				</div>
-			</div>
-		</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="ed_copy_right" style="text-align: center">
+            <p>&copy; Copyright 2018, All Rights Reserved, <a href="#">EDUCO</a></p>
+            <p>Rewrite By Leduyvuong</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="ed_footer_menu">
+            <ul>
+              <li>
+                <%= link_to t('layouts.header.home'), root_path %>
+              </li>
+              <li>
+                <%= link_to t('layouts.footer.private'), "#" %>
+              </li>
+              <li>
+                <%= link_to t('layouts.header.about'), "#" %>
+              </li>
+              <li>
+                <%= link_to t('layouts.header.contact'), "#" %></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
