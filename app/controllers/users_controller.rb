@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :found_user, only: [:show, :edit, :update]
+  before_action :current_user, only: [:edit_summary]
   def found_user
     @user = User.find_by(id: session[:user_id])
     if @user
@@ -9,7 +10,8 @@ class UsersController < ApplicationController
       redirect_to login_path
     end
   end
-  def show   
+  def show 
+    @summary_list = @user.summaries.where("status = 1")
   end
   def edit
   end
@@ -31,7 +33,7 @@ class UsersController < ApplicationController
       log_in @user
       redirect_to home_path
     else
-      render 'new'
+      render :new
     end
   end
   private

@@ -298,7 +298,12 @@ textarea {
 }
 
 .curly-quotes {
-  border-bottom: 1px solid black;
+  padding-left: 30px;
+  margin-bottom: -20px;
+
+  .time_ago {
+    font-size: 13px;
+  }
 }
 
 .ed_login_form {
@@ -479,6 +484,7 @@ textarea {
       font-size: 14px;
       height: 45px;
       text-align: left;
+
     }
 
     .form-group {
@@ -898,6 +904,7 @@ a.ed_getinvolved {
 }
 
 .tabcon {
+  text-align: center;
   padding-bottom: 20px;
   border-bottom: solid 1px #202020;
   padding-top: 10px;
@@ -1065,7 +1072,6 @@ a.ed_getinvolved {
 .ed_dashboard_tab_info {
   float: left;
   width: 100%;
-  text-align: center;
   background-color: #fff;
   padding: 20px;
 
