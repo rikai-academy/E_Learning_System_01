@@ -8,7 +8,7 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   def User.digest(string)
     if ActiveModel::SecurePassword.min_cost
-      cost = BCrypt::Engine::MIN_COST :
+      cost = BCrypt::Engine::MIN_COST
     else
       cost = BCrypt::Engine.cost
     end

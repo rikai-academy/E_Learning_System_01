@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
-  def home
+  def index
     @categories = Category.paginate(page: params[:page])
+    render :home
   end
 end

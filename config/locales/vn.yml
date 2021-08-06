@@ -1,4 +1,8 @@
 vi:
+  errors:
+    not_login: 'Hãy đăng nhập !'
+    form_contain: 'Form chứa'
+    error:  'lỗi'
   page:
     next: 'Trang sau'
     pre:  'Trang trước'
@@ -40,4 +44,11 @@ vi:
       title:  'Khóa học'
       allcourses:  'Tất cả khóa học'
       getinvolved:  'Tham gia '
+  users:
+    new:
+      title:  'Đăng ký'
+      signup: 'Đăng ký'
+      create: 'Tạo tài khoản'
+      password: 'Mật khẩu'
+      confirm:  'Xác nhận mật khẩu'
         
