@@ -41,3 +41,22 @@ vi:
       allcourses:  'Tất cả khóa học'
       getinvolved:  'Tham gia '
         
+    cate:
+        title:  'Khóa học'
+        coursename: 'Tên khóa học'
+        location: 'Khu vực'
+        language: 'Ngôn ngữ'
+        type: 'Loại'
+        search: 'Tìm kiếm'
+        allcourse:  'Tất cả khóa học'
+        students: 'học viên'
+        getinvolved:  'Tham gia '
+        previous_label: 'Trang trước'
+        next_label: 'Trang sau'
+  users:
+    new:
+      title:  'Đăng ký'
+      signup: 'Đăng ký'
+      create: 'Tạo tài khoản'
+      password: 'Mật khẩu'
+      confirm:  'Xác nhận mật khẩu'

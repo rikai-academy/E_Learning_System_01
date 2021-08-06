@@ -41,3 +41,22 @@ en:
       title:  'Categories'
       allcourses:  'All Courses'
       getinvolved:  'Get Involved'
+    cate:
+      title:  'Courses'
+      coursename: 'Course Name'
+      location: 'Location'
+      language: 'Language'
+      type: 'Type'
+      search: 'Search'
+      allcourse:  'All Course'
+      students: 'students'
+      getinvolved:  'Get Involved '
+      previous_label: 'Prev'
+      next_label: 'Next'
+  users:
+    new:
+      title:  'SignUp'
+      signup: 'Sign Up'
+      create: 'Create my account'
+      password: 'Password'
+      confirm:  'Password Confirmation'
