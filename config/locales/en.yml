@@ -1,54 +1,68 @@
 en:
   errors:
-    not_login: 'Please log in!'
-    form_contain: 'The form contains'
-    error:  'error'
+    not_login: "Please log in!"
+    fail_login: "Username and password not correct"
+    form_contain: "The form contains"
+    error:  "error"
   page:
-    next: 'Next'
-    pre:  'Prev'
+    next: "Next"
+    pre:  "Prev"
   layouts:
     header:
-      hi: 'welcome to E-Learning'
-      login:  'Log In'
-      home: 'Home'
-      about:  'About Us'
-      courses:  'Courses'
-      contact:  'Contact'
+      hi: "welcome to E-Learning"
+      login:  "Log In"
+      home: "Home"
+      about:  "About Us"
+      courses:  "Courses"
+      contact:  "Contact"
     sidebar:
-      wordlist: 'Word List'
-      strartlesson: 'Strart Lesson'
-      activity: 'Activity'
-      profile:  'Profile'
+      wordlist: "Word List"
+      strartlesson: "Strart Lesson"
+      activity: "Activity"
+      profile:  "Profile"
     footer:
-      elearning_about:  'E-Learning is a form of education and learning based on the connection of the Internet. Lecturers and students can both participate in learning and training on the E-learning system on computers, tablets, or smartphones with Internet connection.'
-      educate:  'How many students do you educate monthly? Open'
-      ago:  'ago'
-      design: ' Web Design that works. Have a look at this masterpiece.'
-      private: 'Private Policy'
-      find: 'Find Us'
-      social: 'Social Media'
+      elearning_about:  "E-Learning is a form of education and learning based on the connection of the Internet. Lecturers and students can both participate in learning and training on the E-learning system on computers, tablets, or smartphones with Internet connection."
+      educate:  "How many students do you educate monthly? Open"
+      ago:  "ago"
+      design: " Web Design that works. Have a look at this masterpiece."
+      private: "Private Policy"
+      find: "Find Us"
+      social: "Social Media"
   static_pages:
     home:
-      title: 'Home'
-      hello: 'Hello'
-      hi: 'Hi'
-      content: ', here you have to see and update your profile, subscribed
+      title: "Home"
+      hello: "Hello"
+      hi: "Hi"
+      content: ", here you have to see and update your profile, subscribed
                   courses, activities and other things. All the above updates can be modified from
-                  the left panel provided.'
-      post: 'Post'
-      summary:  'Summary'
-      wellcome: 'Welcome to Dashboard'
-      course_number: 'Course %{numberc}'
-      lesson_number: 'Lesson %{numberl}'
+                  the left panel provided."
+      post: "Post"
+      summary:  "Summary"
+      wellcome: "Welcome to Dashboard"
+      course_number: "Course %{numberc}"
+      lesson_number: "Lesson %{numberl}"
   categories:
     home:
-      title:  'Categories'
-      allcourses:  'All Courses'
-      getinvolved:  'Get Involved'
+      title:  "Categories"
+      allcourses:  "All Courses"
+      getinvolved:  "Get Involved"
   users:
     new:
-      title:  'SignUp'
-      signup: 'Sign Up'
-      create: 'Create my account'
-      password: 'Password'
-      confirm:  'Password Confirmation'
+      title:  "SignUp"
+      signup: "Sign Up"
+      create: "Create my account"
+      password: "Password"
+      confirm:  "Password Confirmation"
+  session:
+    new:
+      title:  "Log In"
+      new_user: "New user?"
+      signup: "Sign up now!"
+      username: "Username or Email"
+  admin:
+    lesson:
+      index:
+        name: "Lesson Name"
+        status: "Status"
+        times:  "Time"
+        Category: "Category"

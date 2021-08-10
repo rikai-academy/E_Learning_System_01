@@ -1,0 +1,40 @@
+<%= render "admin/sidebar_admin" %>
+<div class = "col-md-10 ">
+
+  <table class="table table-striped table-inverse table-responsive table-bordered table-hover">
+      <thead class="thead-inverse">
+        <tr>
+          <th>ID</th>
+          <th><%= t("admin.lesson.index.name")%></th>
+          <th ><%= t("admin.lesson.index.status")%></th>
+          <th><%= t("admin.lesson.index.time")%></th>
+          <th><%= t("admin.lesson.index.category")%></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @lessons.each do |c| %>
+        <div class="row d-flex justify-content-center mt-4">
+          <tr>
+            <td ><%= c.id%></td>
+            <td scope="row"><%= c.name_lesson%></td>           
+            <td><% if c.status%>
+                  <div class ="active_status"></div>
+                <%else%>
+                  <div class ="unactive_status"></div>
+                <%end%>
+            </td>
+            <td ><%= c.time%> minutes</td>
+            <td ><%= c.category_id%></td>
+            <td>
+              <%= link_to "Edit", "" %> | <%= link_to "Unactive", "" %>         
+            </td>
+          </tr> 
+        </div>      
+        <%end%>
+        
+        </tbody>
+         
+    </table>
+    <%= will_paginate @categories, :previous_label=> t("page.pre"), :next_label => t("page.next") %>
+</div>
+
