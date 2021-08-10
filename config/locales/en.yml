@@ -1,4 +1,8 @@
 en:
+  errors:
+    not_login: 'Please log in!'
+    form_contain: 'The form contains'
+    error:  'error'
   page:
     next: 'Next'
     pre:  'Prev'
@@ -41,3 +45,10 @@ en:
       title:  'Categories'
       allcourses:  'All Courses'
       getinvolved:  'Get Involved'
+  users:
+    new:
+      title:  'SignUp'
+      signup: 'Sign Up'
+      create: 'Create my account'
+      password: 'Password'
+      confirm:  'Password Confirmation'
