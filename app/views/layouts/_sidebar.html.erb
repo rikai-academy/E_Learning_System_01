@@ -3,7 +3,7 @@
     <div class="ed_profile_img">
       <%= image_tag "23.png" %>
     </div>
-    <h3>Le Duy Vuong</h3>
+    <h3><%= @user.username%></h3>
     <div class="ed_tabs_left">
       <ul class="nav nav-tabs">
         <li class="active"><%= link_to t('layouts.header.home'), "#dasboard", { :class => '', 'data-toggle' => 'tab' } %></li>
