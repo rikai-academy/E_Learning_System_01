@@ -1,4 +1,8 @@
 vi:
+  inform:
+    succes: "Thành công!"
+    unsucces: "Không thành công!"
+    created:  "Đã tạo mới!"
   errors:
     not_login: "Hãy đăng nhập !"
     fail_login: "Tài khoản hoặc mật khẩu không đúng"
@@ -65,4 +69,9 @@ vi:
         status: "Trạng Thái"
         times:  "Thời gian"
         Category: "Khóa học"
+  summary:
+    posted: "Đã thêm "
+    ago:  "trước."
+    content:  "Nội dung: "
+    new:  "Nội dung ghi nhớ..."
         
