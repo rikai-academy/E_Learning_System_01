@@ -1,4 +1,8 @@
 en:
+  inform:
+    success: "Successfull"
+    unsuccess: "Unsuccessfull!"
+    created:  "Created!"
   errors:
     not_login: "Please log in!"
     fail_login: "Username and password not correct"
@@ -66,3 +70,8 @@ en:
         status: "Status"
         times:  "Time"
         Category: "Category"
+  summary:
+    posted: "Posted "
+    ago:  "ago."
+    content:  "Content: "
+    new:  "Compose new summary..."

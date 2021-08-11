@@ -15,28 +15,31 @@
                   </p>
                 </div>                
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style ="padding-top: 50px">
-                    <form class="ed_tabpersonal">
-                      <div class="form-group">
-                        <textarea name="whats_new" class="form-control" id="whats_new" cols="50" rows="5"></textarea>
-                      </div>
-                      <div class="form-group">
-                        <button class="btn ed_btn ed_green"><%= t("static_pages.home.post")%></button>
-                      </div>
-                    </form>                  
+                  <%= form_with model: @summary, class: "ed_tabpersonal" do |f|%>
+                    <%= render "shared/flash_messages" %>
+                    <%= render "shared/error_messages", object: f.object %>
+                    <div class="field">
+                      <%= f.text_area :content, placeholder: t("summary.new"), class: "form-control" %>
+                    </div>
+                    <div class="form-group">                   
+                      <%= f.submit t("static_pages.home.post"), class: "btn ed_btn ed_green" %>
+                    </div>
+                  <% end %>                
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style ="padding-top: 20px">
                   <p><%= t("static_pages.home.summary")%></p>
                   <div >
                     <section class="notepaper">
-                      <blockquote class="curly-quotes">
-                        E-Learning là một hình thức giáo dục, học tập dựa trên sự kết nối của Internet. Giảng viên và học viên đều có thể tham gia học và đào tạo trên hệ thống E-learning trên máy tính, máy tính bảng, hoặc điện thoại thông minh có kết nối Internet.                     
-                      </blockquote>  
-                      <blockquote class="curly-quotes">
-                        E-Learning là một hình thức giáo dục, học tập dựa trên sự kết nối của Internet. Giảng viên và học viên đều có thể tham gia học và đào tạo trên hệ thống E-learning trên máy tính, máy tính bảng, hoặc điện thoại thông minh có kết nối Internet.                     
+                      <% @summary_list.each do |s| %>                     
+                      <blockquote id="summary-<%s.id%>" class="curly-quotes">
+                         <%= t("summary.content")%> <%=s.content%><br>
+                         <div class = "time_ago">
+                         <%= t("summary.posted")%> <%= time_ago_in_words(s.created_at) %> <%= t("summary.ago")%>
+                            <%= link_to "delete", s , method: :delete,
+                                                    data: { confirm: "You sure?" } %>
+                          </div>
                       </blockquote>
-                      <blockquote class="curly-quotes">
-                        E-Learning là một hình thức giáo dục, học tập dựa trên sự kết nối của Internet. Giảng viên và học viên đều có thể tham gia học và đào tạo trên hệ thống E-learning trên máy tính, máy tính bảng, hoặc điện thoại thông minh có kết nối Internet.                     
-                      </blockquote>                      
+                      <%end%>                             
                     </section>
                   </div>
                 </div>

@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
   before_action :found_user, only: [:show]
   
-  def show  
+  def show 
+    @summary = Summary.new
+    @summary_list = @user.summaries.suma
   end
   def new
     @user = User.new
