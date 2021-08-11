@@ -50,6 +50,11 @@ en:
       title:  "Categories"
       allcourses:  "All Courses"
       getinvolved:  "Get Involved"
+    inform:
+      success: "Join Successfull!"
+      unsuccess: "You joined this courses!"
+      error:  "You cant join this course"
+      not_found:  "Not found Category!"
   users:
     new:
       title:  "SignUp"
@@ -75,3 +80,5 @@ en:
     ago:  "ago."
     content:  "Content: "
     new:  "Compose new summary..."
+  wordlist:
+    not_join: "You have not taken any courses yet!"

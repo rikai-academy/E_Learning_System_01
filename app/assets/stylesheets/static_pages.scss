@@ -219,6 +219,70 @@ textarea {
   }
 }
 
+.join_courses {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+
+  a {
+    color: #167ac6;
+    width: 100%;
+    text-decoration: none;
+    background-color: #fff;
+    margin: 0;
+    padding: 12px 12px;
+    font-size: 16px;
+    border: 2px solid #167ac6;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #167ac6;
+      border: 2px solid #fff;
+      color: #fff;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.ed_time_executor {
+  float: left;
+  width: 100%;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+      width: 100%;
+      list-style: none;
+      padding: 20px 40px;
+      text-transform: capitalize;
+      background-color: #fff;
+      border-bottom: 1px  solid #ddd;
+
+      span {
+        float: right;
+        color: #afafb7;
+
+        i {
+          font-size: 20px;
+          color: #167ac6;
+        }
+      }
+    }
+  }
+}
 .ed_footer_menu {
   float: left;
   width: 100%;
@@ -297,7 +361,12 @@ textarea {
 }
 
 .curly-quotes {
-  border-bottom: 1px solid black;
+  padding-left: 30px;
+  margin-bottom: -20px;
+
+  .time_ago {
+    font-size: 13px;
+  }
 }
 
 .ed_login_form {
@@ -410,6 +479,12 @@ textarea {
 /* ------ HeaderBottomend----------- */
 
 /* --------menustart---------- */
+.ed_tabs_lesson > .nav-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-right: 1px solid black;
+}
 .ed_tabs_left > .nav-tabs {
   display: flex;
   flex-direction: column;
@@ -478,11 +553,16 @@ textarea {
       font-size: 14px;
       height: 45px;
       text-align: left;
+
     }
 
     .form-group {
       width: 19.7%;
       padding: 00;
+
+      input {
+        color: #fff;
+      }
     }
 
     .ed_orange {
@@ -893,6 +973,7 @@ a.ed_getinvolved {
 }
 
 .tabcon {
+  text-align: center;
   padding-bottom: 20px;
   border-bottom: solid 1px #202020;
   padding-top: 10px;
@@ -1060,7 +1141,6 @@ a.ed_getinvolved {
 .ed_dashboard_tab_info {
   float: left;
   width: 100%;
-  text-align: center;
   background-color: #fff;
   padding: 20px;
 
@@ -1271,9 +1351,9 @@ a.ed_getinvolved {
 .ed_mostrecomeded_course {
   float: left;
   width: 100%;
-  height: 650px;
   background-color: #fff;
   padding: 15px;
+  height: 650px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -1321,3 +1401,12 @@ a.ed_getinvolved {
     margin-top: 30px;
   }
 }
+
+.ed_course_single_item {
+  padding: 40px 20px 20px 20px;
+  background: #fff;
+  float: left;
+  width: 100%;
+}
+
+/* ------- course page end --------- */

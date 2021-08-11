@@ -1,0 +1,11 @@
+<% @lessons.each do |lesson|%>
+  <% if @lessons.first == lesson%>
+    <li class="active">
+      <%= link_to lesson.name_lesson, "#lesson#{lesson.id}" , { "data-toggle" => "tab" }%>
+    </li>
+  <% else %>
+    <li class="">
+      <%= link_to lesson.name_lesson, "#lesson#{lesson.id}" , { "data-toggle" => "tab" }%>
+    </li>
+  <%end%>
+<%end%>
