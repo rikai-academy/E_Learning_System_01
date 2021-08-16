@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     post "/login",        to: "sessions#create"
     delete "/logout",     to: "sessions#destroy"
     get "/signup",        to: "users#new"
+    get "/word_summary",  to: "summaries#word_summary"
   end
   resources :summaries
   resources :users

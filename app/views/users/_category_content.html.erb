@@ -1,28 +1,28 @@
-<% @categories.each do |cate|%>
-  <% if @categories.first == cate %>
-  <div id="course<%=cate.id%>" class="tab-pane active">
+<% @categories.each do |category|%>
+  <% if @categories.first == category %>
+  <div id="course<%=category.id%>" class="tab-pane active">
     <div class="col-md-3 ed_tabs_lesson">
       <ul class="nav nav-tabs ">
-        <%= render "lesson_name", collection: @lessons = cate.lessons %>
+        <%= render "lesson_name", collection: @lessons = category.lessons %>
       </ul>
     </div>
     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
       <div class="tab-content">
-        <%= render "lesson_content", collection: @lessons = cate.lessons %>
+        <%= render "lesson_content", collection: @lessons = category.lessons %>
       </div>
     </div>
   </div>
   <%else%>
-    <div id="course<%=cate.id%>" class="tab-pane">
+    <div id="course<%=category.id%>" class="tab-pane">
       <div class="row">
         <div class="col-md-3 ed_tabs_lesson">
           <ul class="nav nav-tabs">
-            <%= render "lesson_name", collection: @lessons = cate.lessons %>
+            <%= render "lesson_name", collection: @lessons = category.lessons %>
           </ul>
         </div>
         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
           <div class=" tab-content">
-            <%= render "lesson_content", collection: @lessons = cate.lessons %>
+            <%= render "lesson_content", collection: @lessons = category.lessons %>
           </div>
         </div>
       </div>

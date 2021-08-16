@@ -3,6 +3,8 @@ en:
     success: "Successfull"
     unsuccess: "Unsuccessfull!"
     created:  "Created!"
+    word_not_found: "Not found this word!"
+    has_err:  "Has %{err} error "
   errors:
     not_login: "Please log in!"
     fail_login: "Username and password not correct"
@@ -80,5 +82,17 @@ en:
     ago:  "ago."
     content:  "Content: "
     new:  "Compose new summary..."
+    mean_to: "| Mean is: "
   wordlist:
     not_join: "You have not taken any courses yet!"
+  lesson:
+    show:
+      word: "Word"
+      pronounce:  "Pronounce"
+      mean: "Mean"
+      actions:  "Actions"
+      add_summary:  "Add Summary"
+      more: "More"
+      strart: "Strart Lesson"
+      lesson_name:  "Lesson: "
+      not_found:  "Not found lesson"
