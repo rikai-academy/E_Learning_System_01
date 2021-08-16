@@ -9,7 +9,9 @@ Rails.application.routes.draw do
     delete "/logout",     to: "sessions#destroy"
     get "/signup",        to: "users#new"
   end
-  resources :users
-  resources :categories
   resources :summaries
+  resources :users
+  resources :wordlists
+  resources :lessons
+  resources :categories
 end

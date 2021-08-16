@@ -1,0 +1,15 @@
+<% @lessons.each do |lesson_content|%>
+  <% if @lessons.first == lesson_content%>
+    <div id="lesson<%=lesson_content.id%>" class="tab-pane active">
+      <h3>
+        <%= lesson_content.name_lesson%>
+      </h3>
+    </div>
+  <%else%>
+    <div id="lesson<%=lesson_content.id%>" class="tab-pane">
+      <h3>
+        <%= lesson_content.name_lesson%>
+      </h3>
+    </div>
+  <%end%>
+<%end%>

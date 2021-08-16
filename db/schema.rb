@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_11_033632) do
+ActiveRecord::Schema.define(version: 2021_08_11_072654) do
 
   create_table "categories", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,16 @@ ActiveRecord::Schema.define(version: 2021_08_11_033632) do
     t.text "decription"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "lessons", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name_lesson"
+    t.integer "time"
+    t.boolean "status"
+    t.bigint "category_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["category_id"], name: "index_lessons_on_category_id"
   end
 
   create_table "summaries", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -39,5 +49,17 @@ ActiveRecord::Schema.define(version: 2021_08_11_033632) do
     t.string "password_digest"
   end
 
+  create_table "wordlists", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "category_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["category_id"], name: "index_wordlists_on_category_id"
+    t.index ["user_id"], name: "index_wordlists_on_user_id"
+  end
+
+  add_foreign_key "lessons", "categories"
   add_foreign_key "summaries", "users"
+  add_foreign_key "wordlists", "categories"
+  add_foreign_key "wordlists", "users"
 end

@@ -49,6 +49,11 @@ vi:
       title:  "Khóa học"
       allcourses:  "Tất cả khóa học"
       getinvolved:  "Tham gia "
+    inform:
+      success: "Tham gia khóa học thành công"
+      unsuccess: "Bạn đã tham gia khóa học này"
+      error:  "Bạn không thể tham gia khóa học này"
+      not_found:  "Không tìm thấy!"
   users:
     new:
       title:  "Đăng ký"
@@ -74,4 +79,6 @@ vi:
     ago:  "trước."
     content:  "Nội dung: "
     new:  "Nội dung ghi nhớ..."
+  wordlist:
+    not_join: "Bạn chưa tham gia khóa học nào!"
         

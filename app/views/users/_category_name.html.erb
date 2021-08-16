@@ -1,0 +1,11 @@
+<% @categories.each do |w|%>
+  <% if @categories.first == w%>
+    <li class="active">
+      <%= link_to w.name, "#course#{w.id}" , { "data-toggle" => "tab" }%>
+    </li>
+    <% else %>
+      <li>
+        <%= link_to w.name, "#course#{w.id}" , { "data-toggle" => "tab" }%>
+      </li>
+  <%end%>
+<%end%>

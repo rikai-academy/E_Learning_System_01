@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   
   def show 
     @summary = Summary.new
-    @summary_list = @user.summaries.suma
+    @summary_list = @user.summaries.summary_active
+    @categories = @user.categories
   end
   def new
     @user = User.new
@@ -27,5 +28,5 @@ class UsersController < ApplicationController
       return @user unless @user.nil?
       flash[:danger] = t("errors.not_login")
       redirect_to root_path
-  end
+    end
 end
