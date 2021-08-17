@@ -1,15 +1,19 @@
 <% @lessons.each do |lesson_content|%>
   <% if @lessons.first == lesson_content%>
     <div id="lesson<%=lesson_content.id%>" class="tab-pane active">
-      <h3>
-        <%= lesson_content.name_lesson%>
-      </h3>
+      <h3><%= lesson_content.name_lesson%>( <%= lesson_content.content_lessons.count%> <%= t("lesson.show.word")%> )</h3>  
+      <%= render "content_lesson", collection: @content_lessons =  lesson_content.content_lessons%>
+      <div class ="row ed_dashboard_tab_info">
+        <%= link_to t("lesson.show.strart"), lesson_path(id: lesson_content.id), class: "btn btn-primary"%>
+      </div>   
     </div>
   <%else%>
     <div id="lesson<%=lesson_content.id%>" class="tab-pane">
-      <h3>
-        <%= lesson_content.name_lesson%>
-      </h3>
+      <h3><%= lesson_content.name_lesson%>( <%= lesson_content.content_lessons.count%> <%= t("lesson.show.word")%>)</h3>  
+      <%= render "content_lesson", collection: @content_lessons =  lesson_content.content_lessons%>
+      <div class ="row ed_dashboard_tab_info">
+        <%= link_to t("lesson.show.strart"), lesson_path(id: lesson_content.id), class: "btn btn-primary"%>
+      </div>   
     </div>
   <%end%>
 <%end%>
