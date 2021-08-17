@@ -8,13 +8,21 @@ module SessionsHelper
     session.delete(:user_id)
     @current_user = nil
   end
-
+  
   def flash_errors(object)
     if object.errors.any?
       t("inform.has_err" , err: object.errors.count) + object.errors.full_messages.join(", ")
     end
   end
 
+  def is_number? string
+    true if Integer(string) rescue false
+  end
+
+  def admin_user
+    redirect_to(home_url) unless current_user.admin?
+  end
+  
   def current_user
     if session[:user_id]
       @current_user ||= User.find_by(id: session[:user_id])

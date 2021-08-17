@@ -1,4 +1,14 @@
 vi:
+  activerecord:
+      errors:
+        models:
+          content_lesson:
+            attributes:
+              image:
+                image_error1:  "phải có định dạng jpg, jpeg, png"
+                image_error2: "có dung lượng ảnh nhẹ hơn 5MB"
+              audio_word:
+                audio_error:  "phải có định dạng mp3, mpeg"
   inform:
     success: "Thành công!"
     unsuccess: "Không thành công!"
@@ -10,6 +20,7 @@ vi:
     fail_login: "Tài khoản hoặc mật khẩu không đúng"
     form_contain: "Form chứa"
     error:  "lỗi"
+    not_found_user: "Không tìm thấy người dùng này"
   page:
     next: "Trang sau"
     pre:  "Trang trước"
@@ -17,10 +28,12 @@ vi:
     header:
       hi: "Chào mừng tới E-Learning"
       login:  "Đăng nhập"
+      logout: "Đăng xuất"
       home: "Trang Chủ"
       about:  "Về chúng tôi"
       courses:  "Khóa học"
       contact:  "Liên hệ"
+      user: "Người dùng"
     sidebar:
       wordlist: "Danh sách từ"
       strartlesson: "Bắt đầu bài học"
@@ -63,6 +76,31 @@ vi:
       create: "Tạo tài khoản"
       password: "Mật khẩu"
       confirm:  "Xác nhận mật khẩu"
+    home:
+      following:  "đang theo dõi"
+      follower: "theo dõi"
+      no_follow:  "Bạn không đang theo dõi hoặc không có ai theo dõi"
+      follow: "Theo dõi"
+      unfollow: "Hủy theo dõi"
+    activity:
+      join: "đã tham gia "
+      ago: "trước."
+      you_join: "Bạn đã tham gia"
+      nothing:  "Không có gì cả"
+    edit:
+      resetpass:  "Thay đổi mật khẩu"
+      profile:  "Hồ sơ"
+      update_profile: "Cập nhật hồ sơ"
+      title:  "Chỉnh sửa"
+    profile:
+      username: "Tên người dùng :"
+      email:  "Email :"
+      fullname: "Họ và tên :"
+      Sex:  "Giới tính :"
+      address:  "Địa chỉ :"
+      phone:  "Số điện thoại :"
+      courses:  "Khóa học :"
+      not_update: "Chưa cập nhật"
   session:
     new:
       title:  "Đăng nhập"
@@ -93,6 +131,98 @@ vi:
       add_summary:  "Thêm vào ghi nhớ"
       more: "Thêm thông tin"
       strart: "Bắt đầu bài học"
+      strart_test: "Làm bài kiểm tra"
       lesson_name: "Bài học: "
       not_found:  "Không tìm thấy bài học"
-        
+      question: "Câu hỏi "
+      submit: "Nộp bài"
+      back: "Quay về trang chủ"
+    test:
+      not_choose_ans: "Chọn câu trả lời cho câu "
+  admin:
+    user: "Quản lý người dùng"
+    userlist: "Danh sách người dùng"
+    adduser:  "Thêm người dùng"
+    cate: "Quản lý khóa học"
+    catelist: "Danh sách khóa học"
+    addcate:  "Thêm khóa học"
+    lesson: "Quản ly bài học"
+    lessonlist: "Danh sách bài học"
+    addlesson:  "Thêm bài học"
+    edit: "Sửa"
+    Unactive: "Tắt hoạt động"
+    active: "Kích hoạt"
+    dashboard:  "Trang quản trị"
+    users:
+      username: "Tên người dùng"
+      email:  "Email"
+      status: "Trạng thái"
+      account:  "Tài khoản"
+      search: "Tìm"
+      new:
+        create: "Tạo người dùng mới"
+      index:
+        admin:  "Quản trị viên"
+        all:  "Tất cả người dùng"
+        teacher:  "Giáo viên"
+        student:  "Học viên"
+        role: "Vai trò"
+        search: "Tìm kiếm"
+    categories:
+      name: "Tên khóa học"
+      status: "Trạng thái"
+      decrip: "Thông tin"
+      lesson: "Bài học"
+      word: " Từ"
+      update: "Cập nhật"
+      create: "Tạo khóa học mới"
+      not_found:  "Không tìm thấy khóa học!"
+      search: "Tìm"
+    lessons:
+      name: "Tên bài học"
+      status: "Trạng thái"
+      time: "Thời gian"
+      category: "Khóa học"
+      update: "Cập nhật"
+      create: "Tạo bài học mới"
+      word: " Từ"
+      all:  "( Xem tất cả )"
+      question: "Câu hỏi"
+      count:  "( %{count} câu hỏi )"
+      search: "Tìm"
+    content_lessons:
+      word: "Từ"
+      pronounce: "Phát âm"
+      mean: "Nghĩa"
+      new:  "Thêm từ mới"
+      add:  "Thêm"
+      edit: "Sửa"
+      delete: "Xóa"
+      lesson: "Bài học"
+      not_found:  "Không tìm thấy nội dung bài học"
+      search: "Tìm"
+      audio:  "Âm thanh"
+      image:  "Hình ảnh"
+    questions:
+      ques: "Câu hỏi"
+      edit: "Sửa"
+      delete: "Xóa"
+      new:  "Thêm câu hỏi"
+      content:  "Nội dung"
+      answer: "Đáp án"
+      not_found:  "Không tìm thấy câu hỏi"
+      search: "Tìm"
+    answers:
+      content:  "Nội dung"
+      answer: "Đáp án"
+      edit: "Sửa"
+      delete: "Xóa"
+      true: "Đúng"
+      false:  "Sai"
+      new: "Thêm đáp án"
+      right_ans:  "Đáp án đúng"
+      search: "Tìm"
+      audio:  "Âm thanh"
+      edit: "Sửa"
+      delete: "Xóa"
+      not_found:  "Không tìm thấy đáp án"

@@ -1,0 +1,26 @@
+<div class="row ed_dashboard_wrapper">
+  <div class="col-lg-8 col-lg-offset-2  container ed_dashboard_tab_info ">
+  <%= form_with url: result_test_path(id: params[:id]) do |f| %>   
+   <%= render "shared/flash_messages" %> 
+  <%@questions.each do |q|%> 
+    <b><%= t("lesson.show.question")%> <%= @questions.index(q) + 1%>:  </b> <%= q.content%><br>
+    <%change_ans(q).each do |answer|%>
+      <% if @ans_user = session[:ans_user] %>
+        <%if @ans_user["#{q.id}"] == answer.content%>
+          <%= f.radio_button "ques#{q.id}" , answer.content, checked: true, value: q.id%> 
+          <%= f.label q.id, answer.content%><br>
+        <%else%>
+          <%= f.radio_button "ques#{q.id}" , answer.content, checked: false, value: q.id%> 
+          <%= f.label q.id, answer.content%><br>
+        <%end%>
+      <%else%>
+        <%= f.radio_button "ques#{q.id}" , answer.content, checked: false, value: q.id%> 
+        <%= f.label q.id, answer.content%><br>
+      <%end%>
+    <%end%>
+    <br>    
+    <%end%>
+    <%= f.submit t("lesson.show.submit"), class: "btn btn-primary" %>
+  <%end%>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="tab-pane" id="profile">            
+  <div class="col-md-12 ed_dashboard_tab_info"> 
+    <div class = "col-md-6">                     
+      <p><%= t("users.profile.username")%></p>
+      <p><%= t("users.profile.email")%></p>
+      <p><%= t("users.profile.fullname")%></p>
+      <p><%= t("users.profile.Sex")%></p>
+      <p><%= t("users.profile.address")%></p>
+      <p><%= t("users.profile.phone")%></p>
+      <p><%= t("users.profile.courses")%></p>
+    </div>
+    <div class = "col-md-6">                     
+      <p><%= @user.username%></p>
+      <p><%= @user.email%></p>
+      <p><%= @user.user_profile.fullname%></p>
+      <p><%= @user.user_profile.sex ||= t("users.profile.not_update")%></p>
+      <p><%= @user.user_profile.address ||= t("users.profile.not_update")%></p>
+      <p><%= @user.user_profile.phone ||= t("users.profile.not_update")%></p>
+      <p><%= @categories.count%></p>
+    </div>
+    <%= link_to t('users.edit.update_profile'), edit_user_path(id: @user.id), class: "btn btn-primary"%>
+  </div> 
+</div>

@@ -178,6 +178,147 @@ textarea {
 /* ----------Normal css end------- */
 
 /* ----------Header Top start---------- */
+.tab_user {
+  border: 1px solid;
+}
+.users {
+  list-style: none;
+  margin: 0;
+
+  li {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #edf2f6;
+  }
+
+  &.follow {
+    padding: 0;
+  }
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+
+  a {
+    font-size: 10px;
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+
+  strong {
+    display: block;
+  }
+}
+
+.active_status {
+  width: 15px;
+  height: 15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background-color: #31a24c;
+}
+
+.unactive_status {
+  width: 15px;
+  height: 15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background-color: rgb(204, 22, 22);
+}
+
+.sidebar_admin {
+  padding: 20px 0 0 0 !important;
+}
+
+.search {
+  margin: 20px 0 20px 0;
+}
+
+.dashboad_left {
+  height: 900px;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid #bdbebe;
+
+  .childdash {
+    border: 1px solid white;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    border-radius: 10px;
+    background-color: #167ac6;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .childdash_cos {
+    border: 1px solid white;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    background-color: #167ac6;
+    border-radius: 10px;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      border-bottom: 1px solid #6a5f49;
+      padding-bottom: 5px;
+      margin-top: 5px;
+      margin-left: 5px;
+      display: flex;
+      flex-direction: column;
+
+      &:first-child {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        border-bottom: 1px solid #6a5f49;
+        padding-bottom: 5px;
+        margin-top: -5px;
+        margin-left: 5px;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.activities {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 490px;
+}
+
 .ed_info_wrapper {
   float: right;
   width: 50%;
@@ -420,6 +561,7 @@ textarea {
   width: 100%;
   float: left;
   background-color: #fff;
+  border-bottom: 1px solid rgb(129, 128, 128);
 }
 
 .educo_logo {
@@ -1346,6 +1488,14 @@ a.ed_getinvolved {
     margin: 25px 0 10px 0;
     text-transform: capitalize;
   }
+}
+
+.correct_ans {
+  background-color: #3c763d;
+}
+
+.incorrect_ans {
+  background-color: #f10c32;
 }
 
 .ed_mostrecomeded_course {
