@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_11_072654) do
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 2021_08_16_072253) do
+=======
+ActiveRecord::Schema.define(version: 2021_08_17_062848) do
+
+  create_table "answers", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "content"
+    t.boolean "right_ans"
+    t.bigint "question_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["question_id"], name: "index_answers_on_question_id"
+  end
+>>>>>>> 4c9c2c0... Test and Quiz
 
   create_table "categories", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
@@ -18,6 +31,16 @@ ActiveRecord::Schema.define(version: 2021_08_11_072654) do
     t.text "decription"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "content_lessons", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "word"
+    t.string "pronounce"
+    t.string "mean"
+    t.bigint "lesson_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["lesson_id"], name: "index_content_lessons_on_lesson_id"
   end
 
   create_table "lessons", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -28,6 +51,14 @@ ActiveRecord::Schema.define(version: 2021_08_11_072654) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_lessons_on_category_id"
+  end
+
+  create_table "questions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "content"
+    t.bigint "lesson_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["lesson_id"], name: "index_questions_on_lesson_id"
   end
 
   create_table "summaries", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -58,7 +89,10 @@ ActiveRecord::Schema.define(version: 2021_08_11_072654) do
     t.index ["user_id"], name: "index_wordlists_on_user_id"
   end
 
+  add_foreign_key "answers", "questions"
+  add_foreign_key "content_lessons", "lessons"
   add_foreign_key "lessons", "categories"
+  add_foreign_key "questions", "lessons"
   add_foreign_key "summaries", "users"
   add_foreign_key "wordlists", "categories"
   add_foreign_key "wordlists", "users"
