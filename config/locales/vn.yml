@@ -1,8 +1,10 @@
 vi:
   inform:
-    succes: "Thành công!"
-    unsucces: "Không thành công!"
+    success: "Thành công!"
+    unsuccess: "Không thành công!"
     created:  "Đã tạo mới!"
+    word_not_found: "Không tìm thấy từ này"
+    has_err:  "Có %{err} lỗi "
   errors:
     not_login: "Hãy đăng nhập !"
     fail_login: "Tài khoản hoặc mật khẩu không đúng"
@@ -79,6 +81,23 @@ vi:
     ago:  "trước."
     content:  "Nội dung: "
     new:  "Nội dung ghi nhớ..."
+    mean_to: "| Có nghĩa là: "
   wordlist:
     not_join: "Bạn chưa tham gia khóa học nào!"
+  lesson:
+    show:
+      word: " Từ "
+      pronounce:  "Phát âm"
+      mean: "Nghĩa"
+      actions:  "Hành động"
+      add_summary:  "Thêm vào ghi nhớ"
+      more: "Thêm thông tin"
+      strart: "Bắt đầu bài học"
+      lesson_name: "Bài học: "
+      not_found:  "Không tìm thấy bài học"
+      question: "Câu hỏi "
+      submit: "Nộp bài"
+      back: "Quay về trang chủ"
+    test:
+      not_choose_ans: "Chọn câu trả lời cho câu "
         

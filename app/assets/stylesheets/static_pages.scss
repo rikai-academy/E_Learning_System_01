@@ -476,6 +476,14 @@ textarea {
   }
 }
 
+.correct_ans {
+  background-color: #3c763d;
+}
+
+.incorrect_ans {
+  background-color: #f10c32;
+}
+
 /* ------ HeaderBottomend----------- */
 
 /* --------menustart---------- */
@@ -1408,5 +1416,4 @@ a.ed_getinvolved {
   float: left;
   width: 100%;
 }
-
 /* ------- course page end --------- */
