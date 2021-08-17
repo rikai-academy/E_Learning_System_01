@@ -8,7 +8,7 @@ module SessionsHelper
     session.delete(:user_id)
     @current_user = nil
   end
-
+  
   def flash_errors(object)
     if object.errors.any?
       t("inform.has_err" , err: object.errors.count) + object.errors.full_messages.join(", ")

@@ -93,6 +93,11 @@ vi:
       add_summary:  "Thêm vào ghi nhớ"
       more: "Thêm thông tin"
       strart: "Bắt đầu bài học"
+      strart_test: "Làm bài kiểm tra"
       lesson_name: "Bài học: "
       not_found:  "Không tìm thấy bài học"
-        
+      question: "Câu hỏi "
+      submit: "Nộp bài"
+      back: "Quay về trang chủ"
+    test:
+      not_choose_ans: "Chọn câu trả lời cho câu "

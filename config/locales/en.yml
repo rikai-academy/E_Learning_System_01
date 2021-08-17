@@ -94,5 +94,11 @@ en:
       add_summary:  "Add Summary"
       more: "More"
       strart: "Strart Lesson"
+      strart_test: "Strart Test"
       lesson_name:  "Lesson: "
       not_found:  "Not found lesson"
+      question: "Question "
+      submit: "Submit"
+      back: "Back to home"
+    test:
+      not_choose_ans: "Choose answer question "
