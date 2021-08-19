@@ -1,0 +1,21 @@
+<div class="tab-pane" id="activities">
+  <div class="ed_dashboard_tab_info activities">
+    <ul class="users">
+    <%if !@activities.nil? %>
+      <% @activities.each do |act|%>
+        <% if act.username == current_user.username%>
+          <li>
+            <%= t("users.activity.you_join")%> <%=act.name%> <%= time_ago_in_words(act.created_at) %> <%= t("users.activity.ago")%>
+          </li>
+        <%else%>
+          <li>
+           <%= act.username%> <%= t("users.activity.join")%> <%=act.name%> <%= time_ago_in_words(act.created_at) %> <%= t("users.activity.ago")%>
+          </li>
+        <%end%>
+      <%end%>
+    <%else%>
+      Nothing
+    <%end%>
+    <ul>
+  </div>
+</div>

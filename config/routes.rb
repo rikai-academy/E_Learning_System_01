@@ -12,10 +12,15 @@ Rails.application.routes.draw do
     get "result_test",    to: "tests#result_test"
     post "result_test",    to: "tests#result_test"
     resources :summaries
-    resources :users
+    resources :users do
+      member do
+        get :following, :followers
+      end
+    end
     resources :wordlists
     resources :lessons
     resources :categories
     resources :tests
+    resources :relationships, only: [:create, :destroy]
   end
 end

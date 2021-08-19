@@ -1,3 +1,21 @@
+User.create!( username: "leduyvuong",
+  email: "firesoul0608@gmail.com",
+  password: "123456",
+  password_confirmation: "123456",
+  admin: true,
+  status: true)
+# Generate a bunch of additional users. 
+30.times do |n|
+  username = Faker::Name.name
+  email = "elearning-#{n+1}@gmail.com"
+  password = "123456"
+  User.create!(username: username,
+              email: email,
+              password: password,
+              password_confirmation: password,
+              admin: false,
+              status: true)
+end
 36.times do 
   name = "Course of " + Faker::University.name
   decription = Faker::Quote.matz

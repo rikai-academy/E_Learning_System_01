@@ -10,6 +10,7 @@ vi:
     fail_login: "Tài khoản hoặc mật khẩu không đúng"
     form_contain: "Form chứa"
     error:  "lỗi"
+    not_found_user: "Không tìm thấy người dùng này"
   page:
     next: "Trang sau"
     pre:  "Trang trước"
@@ -21,6 +22,7 @@ vi:
       about:  "Về chúng tôi"
       courses:  "Khóa học"
       contact:  "Liên hệ"
+      user: "Người dùng"
     sidebar:
       wordlist: "Danh sách từ"
       strartlesson: "Bắt đầu bài học"
@@ -63,6 +65,17 @@ vi:
       create: "Tạo tài khoản"
       password: "Mật khẩu"
       confirm:  "Xác nhận mật khẩu"
+    home:
+      following:  "đang theo dõi"
+      follower: "theo dõi"
+      no_follow:  "Bạn không đang theo dõi hoặc không có ai theo dõi"
+      follow: "Theo dõi"
+      unfollow: "Hủy theo dõi"
+    activity:
+      join: "đã tham gia "
+      ago: "trước."
+      you_join: "Bạn đã tham gia"
+      nothing:  "Không có gì cả"
   session:
     new:
       title:  "Đăng nhập"

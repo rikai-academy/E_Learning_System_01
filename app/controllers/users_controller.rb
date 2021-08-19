@@ -1,14 +1,24 @@
 class UsersController < ApplicationController
-  before_action :found_user, only: [:show]
+  before_action :found_user, only: [:show, :following, :followers]
   
+  def index
+    @user = User.all.paginate(page: params[:page])
+  end
+
   def show 
     @summary = Summary.new
     @summary_list = @user.summaries.summary_active
     @categories = @user.categories
+    id_array = @user.following_ids
+    id_array << @user.id
+    id_array.join(", ")
+    @activities = User.get_activites(id_array)
   end
+
   def new
     @user = User.new
   end
+
   def create
     @user = User.new(user_params)
     if @user.save
@@ -17,6 +27,16 @@ class UsersController < ApplicationController
     else
       render :new
     end
+  end
+
+  def following
+    @users = @user.following.paginate(page: params[:page])
+    render :show_follow
+  end
+  
+  def followers
+    @users = @user.followers.paginate(page: params[:page])
+    render :show_follow
   end
   private
     def user_params
