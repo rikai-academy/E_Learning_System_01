@@ -18,6 +18,7 @@ vi:
     header:
       hi: "Chào mừng tới E-Learning"
       login:  "Đăng nhập"
+      logout: "Đăng xuất"
       home: "Trang Chủ"
       about:  "Về chúng tôi"
       courses:  "Khóa học"
@@ -76,6 +77,20 @@ vi:
       ago: "trước."
       you_join: "Bạn đã tham gia"
       nothing:  "Không có gì cả"
+    edit:
+      resetpass:  "Thay đổi mật khẩu"
+      profile:  "Hồ sơ"
+      update_profile: "Cập nhật hồ sơ"
+      title:  "Chỉnh sửa"
+    profile:
+      username: "Tên người dùng :"
+      email:  "Email :"
+      fullname: "Họ và tên :"
+      Sex:  "Giới tính :"
+      address:  "Địa chỉ :"
+      phone:  "Số điện thoại :"
+      courses:  "Khóa học :"
+      not_update: "Chưa cập nhật"
   session:
     new:
       title:  "Đăng nhập"
