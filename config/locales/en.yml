@@ -10,6 +10,7 @@ en:
     fail_login: "Username and password not correct"
     form_contain: "The form contains"
     error:  "error"
+    not_found_user: "Not found this user"
   page:
     next: "Next"
     pre:  "Prev"
@@ -21,6 +22,7 @@ en:
       about:  "About Us"
       courses:  "Courses"
       contact:  "Contact"
+      user: "Users"
     sidebar:
       wordlist: "Word List"
       strartlesson: "Strart Lesson"
@@ -64,6 +66,17 @@ en:
       create: "Create my account"
       password: "Password"
       confirm:  "Password Confirmation"
+    home:
+      following:  "following"
+      follower: "followers"
+      no_follow:  "You are not following or no one is follower"
+      follow: "follow"
+      unfollow: "unfollow"
+    activity:
+      join: "joined to "
+      ago: "ago."
+      you_join: "You joined to"
+      nothing:  "Nothing"  
   session:
     new:
       title:  "Log In"
