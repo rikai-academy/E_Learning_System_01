@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   self.per_page = Settings.WillPaginate.user_per_page
+  has_one :user_profile
   has_many :summaries, dependent: :destroy
   has_many :wordlists, dependent: :destroy
   has_many :categories, through: :wordlists

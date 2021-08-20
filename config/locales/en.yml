@@ -18,6 +18,7 @@ en:
     header:
       hi: "welcome to E-Learning"
       login:  "Log In"
+      logout: "Log Out"
       home: "Home"
       about:  "About Us"
       courses:  "Courses"
@@ -76,7 +77,21 @@ en:
       join: "joined to "
       ago: "ago."
       you_join: "You joined to"
-      nothing:  "Nothing"  
+      nothing:  "Nothing" 
+    edit:
+      resetpass:  "Reset Password"
+      profile:  "Profile"
+      update_profile: "Update Profile"
+      title:  "Edit"
+    profile:
+      username: "User name :"
+      email:  "Email :"
+      fullname: "Full Name :"
+      Sex:  "Sex :"
+      address:  "Address :"
+      phone:  "Phone :"
+      courses:  "Courses :" 
+      not_update: "Not update"
   session:
     new:
       title:  "Log In"

@@ -1,7 +1,7 @@
 <div class="tab-pane" id="activities">
   <div class="ed_dashboard_tab_info activities">
     <ul class="users">
-    <%if !@activities.nil? %>
+    <%if !@activities.blank? %>
       <% @activities.each do |act|%>
         <% if act.username == current_user.username%>
           <li>
@@ -14,7 +14,7 @@
         <%end%>
       <%end%>
     <%else%>
-      Nothing
+      <h3><%= t("users.activity.nothing")%></h3>
     <%end%>
     <ul>
   </div>
