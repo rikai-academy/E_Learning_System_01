@@ -4,6 +4,7 @@ class User < ApplicationRecord
   has_many :summaries, dependent: :destroy
   has_many :wordlists, dependent: :destroy
   has_many :categories, through: :wordlists
+  scope :search_name, -> (user){ where("username like ?", "%#{user}%")}
   scope :activities,
     -> (user_array) {select(:username, :"categories.name", :"wordlists.created_at").joins(:categories).where("user_id in (?) ", user_array).order("wordlists.created_at": :desc)}
   validates :username, presence: true, length: {maximum: 50}
@@ -21,11 +22,23 @@ class User < ApplicationRecord
   has_many :followers, through: :passive_relationships, source: :follower
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
+
   def self.get_activites user_array
     if user_array
       activities user_array
     end
   end
+
+  def self.search(user)
+    if user
+      user_array = search_name user
+      return user_array unless user_array.blank?
+      return all
+    else
+      all
+    end
+  end
+
   def follow(other_user)
     following << other_user
   end

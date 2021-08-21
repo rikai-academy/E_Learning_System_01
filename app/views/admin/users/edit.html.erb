@@ -1,51 +1,59 @@
 <%= render "admin/sidebar_admin" %>
-  <div class="col-md-9">
-    <h1>
-      <%= t('users.edit.resetpass')%>
-    </h1>
-    <%= render "shared/flash_messages" %>
-    <%= form_with(model: [:admin, @user], local: true) do |f| %>
-      <div class="col-md-4 col-md-offset-1 signup">
-        <%= f.label :username, "Username" %>
-        <%= f.text_field :username, value: @user.username %>
-        <%= f.label :email, "Email" %>
-        <%= f.text_field :email, value: @user.email %>
-        <%= f.label :admin %>
-        <%= f.select :admin, options_for_select(["1", "0" ], selected: :adm)%>
-        <%= render 'shared/error_messages' %>
-        <%= f.label :password, t('users.new.password') %>
-        <%= f.password_field :password %>
-        <%= f.label :password_confirmation, t('users.new.confirm') %>
-        <%= f.password_field :password_confirmation %>
-      </div>
-      <div class="col-md-6 signup">
-        <h1>
-          <%= t('users.edit.profile')%>
-        </h1>
-        <div class="col-md-4 ed_profile_img">
-          <% if @user.user_profile.image.attached? %>
-            <%= image_tag @user.user_profile.image %>
-          <%else%>
-            <%= image_tag "23.png" %>
-          <%end%>
-        <span class="image">
-          <%= f.file_field :image %>
-        </span>
+<div class = "col-md-10 ed_dashboard_wrapper">
+  <div class=" ed_dashboard_tab_info">
+      <div class="col-md-6 ">
+      <h1>
+        <%= t("admin.users.account")%>
+      </h1>
+      <%= render "shared/flash_messages" %>
+      <%= form_with(model: [:admin, @user], local: true) do |f| %>
+        <%= render "shared/error_messages", object: f.object %>
+          <div class="col-md-8 signup">
+            <%= f.label :username, value: t("admin.users.username") %>
+            <%= f.text_field :username, value: @user.username %>
+            <%= f.label :email, value: t("admin.users.email") %>
+            <%= f.text_field :email, value: @user.email %>
+            <%= f.label :admin %>
+            <%= f.select :admin, options_for_select(["0", "1" ], selected: :adm)%>       
+            <%= f.label :password, t("users.new.password") %>
+            <%= f.password_field :password %>
+            <%= f.label :password_confirmation, t("users.new.confirm") %>
+            <%= f.password_field :password_confirmation %>
+             <%= f.submit t("users.edit.update_profile"), class: "btn btn-primary" %>
+          </div>
         </div>
-        <div class="col-md-8 ">
-          <%= render 'shared/error_messages' %>
-          <%= f.label :fullname%>
-          <%= f.text_field :fullname, value: @user.user_profile.fullname %>
-          <%= f.label :sex %>
-          <%= f.text_field :sex, value: @user.user_profile.sex %>
-          <%= f.label :address%>
-          <%= f.text_field :address, value: @user.user_profile.address %>
-          <%= f.label :phone %>
-          <%= f.text_field :phone, value: @user.user_profile.phone %>
+         
+      <%end%>
+      <%= form_with(model: [:admin, @user], local: true) do |f| %>
+        <div class="col-md-6 signup">
+          <h1>
+            <%= t("users.edit.profile")%>
+          </h1>
+          <div class="col-md-4 ed_profile_img">
+            <% if @user.user_profile.image.attached? %>
+              <%= image_tag @user.user_profile.image %>
+            <%else%>
+              <%= image_tag "23.png" %>
+            <%end%>
+          <span class="image">
+            <%= f.file_field :image %>
+          </span>
+          </div>
+          <div class="col-md-8 ">
+
+            <%= render "shared/error_messages", object: @user_profile %>
+            <%= f.label :fullname, value: t("users.profile.fullname")%>
+            <%= f.text_field :fullname, value: @user.user_profile.fullname %>
+            <%= f.label :sex, value: t("users.profile.Sex") %>
+            <%= f.text_field :sex, value: @user.user_profile.sex %>
+            <%= f.label :address, value: t("users.profile.address")%>
+            <%= f.text_field :address, value: @user.user_profile.address %>
+            <%= f.label :phone, value: t("users.profile.phone") %>
+            <%= f.text_field :phone, value: @user.user_profile.phone %>
+            <%= f.submit t("users.edit.update_profile"), class: "btn btn-primary" %>
+          </div>
         </div>
-      </div>
-      <div class="row col-md-4 col-md-offset-4 ed_dashboard_tab">
-        <%= f.submit t('users.edit.update_profile'), class: "btn btn-primary" %>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
+</div>
