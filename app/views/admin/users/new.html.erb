@@ -1,0 +1,30 @@
+<%= render "admin/sidebar_admin" %>
+<div class="col-md-10 ed_dashboard_wrapper">
+  <div class = "col-md-6 col-md-offset-3 ed_dashboard_tab_info">
+    <div class = "col-md-12">
+      <h3><%= t("admin.users.new.create")%></h3>
+    </div>
+    <div class = "col-md-12">
+      <%= form_with( model: [:admin, @user], local: true) do |f| %>
+      <div class = "col-md-11 col-md-offset-1">
+        <%= render "shared/error_messages", object: f.object %>
+      </div>
+      <div class = "col-md-12">
+      <div class="col-md-offset-1 signup">
+        <%= f.label :username, "Username" %>
+        <%= f.text_field :username  %>
+        <%= f.label :email, "Email" %>
+        <%= f.text_field :email %>
+        <%= f.label :admin %><%= f.select :admin, options_for_select(["0", "1"], selected: :adm)%>
+        <%= f.label :status, value: t("admin.users.status") %><%= f.select :status, options_for_select(["1", "0"], selected: :sts)%>                    
+        <%= f.label :password, t("users.new.password") %>
+        <%= f.password_field :password %>
+        <%= f.label :password_confirmation, t("users.new.confirm") %>
+        <%= f.password_field :password_confirmation %>  
+        <%= f.submit  t("users.new.create"), class: "btn btn-primary" %>               
+      </div>
+      <%end%>
+      </div>
+    </div>
+  </div>
+</div>

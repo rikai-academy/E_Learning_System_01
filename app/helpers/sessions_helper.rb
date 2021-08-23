@@ -15,6 +15,10 @@ module SessionsHelper
     end
   end
 
+  def admin_user
+    redirect_to(home_url) unless current_user.admin?
+  end
+  
   def current_user
     if session[:user_id]
       @current_user ||= User.find_by(id: session[:user_id])

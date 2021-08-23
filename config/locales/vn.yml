@@ -129,3 +129,24 @@ vi:
       back: "Quay về trang chủ"
     test:
       not_choose_ans: "Chọn câu trả lời cho câu "
+  admin:
+    user: "Quản lý người dùng"
+    userlist: "Danh sách người dùng"
+    adduser:  "Thêm người dùng"
+    cate: "Quản lý khóa học"
+    catelist: "Danh sách khóa học"
+    addcate:  "Thêm khóa học"
+    lesson: "Quản ly bài học"
+    lessonlist: "Danh sách bài học"
+    addlesson:  "Thêm bài học"
+    edit: "Sửa"
+    Unactive: "Tắt hoạt động"
+    active: "Kích hoạt"
+    dashboard:  "Trang quản trị"
+    users:
+      username: "Tên người dùng"
+      email:  "Email"
+      status: "Trạng thái"
+      account:  "Tài khoản"
+      new:
+        create: "Tạo người dùng mới"

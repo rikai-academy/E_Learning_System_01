@@ -130,3 +130,22 @@ en:
       back: "Back to home"
     test:
       not_choose_ans: "Choose answer question "
+  admin:
+    user: "User Management"
+    userlist: "User list"
+    adduser:  "Add user"
+    cate: "Categories Management"
+    catelist: "Categories List"
+    addcate:  "Add Categories"
+    lesson: "Lesson Management"
+    lessonlist: "Lesson List"
+    addlesson:  "Add lesson"
+    dashboard:  "Dash Board"
+    users:
+      username: "User name"
+      email:  "Email"
+      status: "Status"
+      create: "Create new user"
+      account:  "Account"
+      new:
+        create: "Create new user"

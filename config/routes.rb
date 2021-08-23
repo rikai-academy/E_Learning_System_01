@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
     root "sessions#new"
+    get "/admin",         to: "admin#index"
     get "/home",          to: "users#show"
     get "/signup",        to: "users#new"
     get "/cate",          to: "static_pages#categories"
@@ -22,5 +23,12 @@ Rails.application.routes.draw do
     resources :categories
     resources :tests
     resources :relationships, only: [:create, :destroy]
+    namespace :admin do
+      resources :users
+      resources :categories
+      resources :questions
+      resources :answers
+      resources :lessons
+    end
   end
 end
