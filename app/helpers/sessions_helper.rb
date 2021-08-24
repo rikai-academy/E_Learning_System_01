@@ -15,6 +15,10 @@ module SessionsHelper
     end
   end
 
+  def is_number? string
+    true if Integer(string) rescue false
+  end
+
   def admin_user
     redirect_to(home_url) unless current_user.admin?
   end
