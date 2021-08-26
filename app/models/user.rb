@@ -4,7 +4,13 @@ class User < ApplicationRecord
   has_many :summaries, dependent: :destroy
   has_many :wordlists, dependent: :destroy
   has_many :categories, through: :wordlists
-  scope :search_name, -> (user){ where("username like ?", "%#{user}%")}
+  scope :search_name, lambda { |user|
+    if user
+      where("username like ?", "%#{user}%")
+    else
+      all
+    end
+  }
   scope :activities,
     -> (user_array) {select(:username, :"categories.name", :"wordlists.created_at").joins(:categories).where("user_id in (?) ", user_array).order("wordlists.created_at": :desc)}
   validates :username, presence: true, length: {maximum: 50}
@@ -30,13 +36,9 @@ class User < ApplicationRecord
   end
 
   def self.search(user)
-    if user
       user_array = search_name user
       return user_array unless user_array.blank?
-      return all
-    else
       all
-    end
   end
 
   def follow(other_user)

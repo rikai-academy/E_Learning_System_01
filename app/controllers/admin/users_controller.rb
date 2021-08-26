@@ -2,7 +2,7 @@ class Admin::UsersController < ApplicationController
   before_action :admin_user
   before_action :found_user, only: [:edit, :update,:destroy, :show]
   def index 
-    @users = User.search(params[:name]).paginate(page: params[:page])
+    @users = User.search(params[:name]).paginate(page: ( params[:page] if is_number? params[:page] ))
   end
   def new
     @user = User.new
@@ -28,7 +28,8 @@ class Admin::UsersController < ApplicationController
   def update
     @user_profile = @user.user_profile
     @user_profile.image.attach(params[:user][:image])
-    if @user.update(user_params) && @user_profile.update(user_profile_params)
+    if @user.update(user_params)
+      @user_profile.update(user_profile_params)
       flash[:success] = t("inform.success")
       render :edit
     else
