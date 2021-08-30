@@ -1,10 +1,10 @@
 @user = User.create!(username: "admin",
-                    email: "firesoul0608@gmail.com",
-                    password: "123456",
-                    password_confirmation: "123456",
-                    status: true,
-                    admin: true)
-@user.create_user_profile(fullname: @user.username)
+                      email: "firesoul0608@gmail.com",
+                      password: "123456",
+                      password_confirmation: "123456",
+                      status: true,
+                      role: 0)
+  @user.create_user_profile(fullname: @user.username)
 30.times do |n|
   name = Faker::Name.name
   email = "elearning-#{n+1}@gmail.com"
@@ -13,7 +13,7 @@
                         password: "123456",
                         password_confirmation: "123456",
                         status: true,
-                        admin: false)
+                        role: 2)
   @user.create_user_profile(fullname: @user.username)
 end
 36.times do 

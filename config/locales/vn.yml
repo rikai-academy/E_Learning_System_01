@@ -159,8 +159,16 @@ vi:
       status: "Trạng thái"
       account:  "Tài khoản"
       search: "Tìm"
+      no_user:  "Không có người dùng"
       new:
         create: "Tạo người dùng mới"
+      index:
+        admin:  "Quản trị viên"
+        all:  "Tất cả người dùng"
+        teacher:  "Giáo viên"
+        student:  "Học viên"
+        role: "Vai trò"
+        search: "Tìm kiếm"
     categories:
       name: "Tên khóa học"
       status: "Trạng thái"
