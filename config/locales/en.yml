@@ -157,8 +157,16 @@ en:
       status: "Status"
       create: "Create new user"
       account:  "Account"
+      no_user:  "No User"
       new:
         create: "Create new user"
+      index:
+        admin:  "Admin"
+        all:  "All Users"
+        teacher:  "Teacher"
+        student:  "Student"
+        role: "Role"
+        search: "Search"
     categories:
       name: "Course Name "
       status: "Status"
