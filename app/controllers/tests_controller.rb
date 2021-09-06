@@ -1,10 +1,13 @@
 class TestsController < ApplicationController
-  before_action :found_lesson, only: [:show, :result_test]
+  before_action :found_lesson, only: [:show, :create, :train, :result_user]
   def show
     @questions = @lesson.questions
   end
-
-  def result_test
+  
+  def index
+  end
+  
+  def create
     session.delete(:ans_user)
     @questions = @lesson.questions
     count = 0   
@@ -16,14 +19,17 @@ class TestsController < ApplicationController
       if params["ques#{q.id}"].nil?
         not_choose += "#{@questions.index(q) + 1 } "
       else
-        if ans.content == params["ques#{q.id}"]
+        if ans.content_lesson.word == params["ques#{q.id}"]
           count +=1
         end
       end
     end 
     if not_choose == t("lesson.test.not_choose_ans")     
       flash[:success] = "#{count}/#{@questions.count}"
-      return @questions && @ans_user
+      result_user count
+      @questions 
+      @ans_user
+      render :index
     else   
       flash[:danger] = not_choose
       redirect_to request.referer
@@ -31,6 +37,16 @@ class TestsController < ApplicationController
   end
   
   private
+    def result_user content
+      result = ResultLesson.new(user_id: current_user.id,
+        content: content,
+        lesson_id: @lesson.id)
+      if !result.save
+        flash[:danger] = flash_errors(result)
+        redirect_to request.referer
+      end
+    end
+
     def get_user_answer(questions)
       ans_user = Hash.new
       questions.each do |ans|
@@ -42,6 +58,7 @@ class TestsController < ApplicationController
       end
       ans_user
     end
+    
     def found_lesson
       @lesson = Lesson.find_by(id: params[:id])
       return @lesson unless @lesson.nil?

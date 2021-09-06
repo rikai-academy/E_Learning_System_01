@@ -19,6 +19,19 @@ module SessionsHelper
     true if Integer(string) rescue false
   end
 
+  def swap_string string
+    array = string.split("")
+    
+    4.times do
+      location_array = (0...array.count).to_a
+      ran1 = location_array.sample
+      location_array.delete(ran1)
+      ran2 = location_array.sample
+      location_array.delete(ran2)
+      array[ran1], array[ran2] = array[ran2], array[ran1] 
+    end
+    array
+  end
   def admin_user
     redirect_to(home_url) unless current_user.admin?
   end
@@ -27,6 +40,10 @@ module SessionsHelper
     if session[:user_id]
       @current_user ||= User.find_by(id: session[:user_id])
     end
+  end
+
+  def teacher_admin
+    current_user.teacher? || current_user.admin?
   end
 
   def logged_in?

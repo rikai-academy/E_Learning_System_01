@@ -10,6 +10,8 @@ class User < ApplicationRecord
   has_many :summaries, dependent: :destroy
   has_many :wordlists, dependent: :destroy
   has_many :categories, through: :wordlists
+  has_many :result_lessons, dependent: :destroy
+  has_many :lessons, through: :result_lessons
   scope :search_name, lambda { |user|
     if user
       where("username like ?", "%#{user}%")
@@ -60,6 +62,10 @@ class User < ApplicationRecord
       user_array = search_name user
       return user_array unless user_array.blank?
       all
+  end
+
+  def default_author
+    self.status ||= true
   end
 
   def follow(other_user)
