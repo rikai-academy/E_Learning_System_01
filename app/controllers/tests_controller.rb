@@ -1,10 +1,13 @@
 class TestsController < ApplicationController
-  before_action :found_lesson, only: [:show, :result_test, :train, :result_user]
+  before_action :found_lesson, only: [:show, :create, :train, :result_user]
   def show
     @questions = @lesson.questions
   end
-
-  def result_test
+  
+  def index
+  end
+  
+  def create
     session.delete(:ans_user)
     @questions = @lesson.questions
     count = 0   
@@ -24,7 +27,9 @@ class TestsController < ApplicationController
     if not_choose == t("lesson.test.not_choose_ans")     
       flash[:success] = "#{count}/#{@questions.count}"
       result_user count
-      return @questions && @ans_user
+      @questions 
+      @ans_user
+      render :index
     else   
       flash[:danger] = not_choose
       redirect_to request.referer

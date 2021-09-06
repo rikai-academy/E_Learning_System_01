@@ -141,6 +141,7 @@ vi:
       check:  "Kiểm tra"
       undo: "Làm lại"
       next: "Tiếp theo"
+      pdf:  "Tải PDF"
     test:
       not_choose_ans: "Chọn câu trả lời cho câu "
   admin:

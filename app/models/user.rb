@@ -64,6 +64,10 @@ class User < ApplicationRecord
       all
   end
 
+  def default_author
+    self.status ||= true
+  end
+
   def follow(other_user)
     following << other_user
   end

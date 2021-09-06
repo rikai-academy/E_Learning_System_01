@@ -31,6 +31,8 @@ gem "omniauth-facebook", "~> 8.0"
 gem "omniauth-rails_csrf_protection", "~> 1.0"
 gem "omniauth-twitter", "~> 1.4"
 gem "figaro", "~> 1.2"
+gem "wicked_pdf", "~> 2.1"
+gem "wkhtmltopdf-binary", "~> 0.12.6.5"
 
 group :development, :test do
   
