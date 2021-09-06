@@ -12,7 +12,7 @@
                 <%if current_user.admin? %>
                   <%= link_to t("admin.dashboard"), admin_path, class: "login_button"%>
                 <%end%>
-                <%= link_to t("layouts.header.logout"), logout_path, class: "login_button", method: :delete%>
+                <%= link_to t("layouts.header.logout"), logout_path, method: :delete, class: "login_button"%>
               <% else %>
                 <%= link_to t("layouts.header.login"), login_path, class: "login_button"%>
               <% end %>

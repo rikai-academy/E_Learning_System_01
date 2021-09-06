@@ -1,11 +1,17 @@
 class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable,
+         :omniauthable , omniauth_providers: [:facebook, :google_oauth2, :twitter]
   enum role: {admin: 0, teacher: 1, student: 2 }
-  before_create :default_author
   self.per_page = Settings.WillPaginate.user_per_page
   has_one :user_profile
   has_many :summaries, dependent: :destroy
   has_many :wordlists, dependent: :destroy
   has_many :categories, through: :wordlists
+  has_many :result_lessons, dependent: :destroy
+  has_many :lessons, through: :result_lessons
   scope :search_name, lambda { |user|
     if user
       where("username like ?", "%#{user}%")
@@ -28,13 +34,28 @@ class User < ApplicationRecord
                           dependent: :destroy
   has_many :following, through: :active_relationships, source: :followed
   has_many :followers, through: :passive_relationships, source: :follower
-  has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
   def self.get_activites user_array
     if user_array
       activities user_array
     end
+  end
+
+  def self.from_omniauth(auth)
+    user = User.where(email: auth.info.email).first
+    if user.nil?
+      password = Devise.friendly_token[0,20]
+      if user = User.create!(provider: auth.provider,
+                          uid: auth.uid,
+                          email: auth.info.email,
+                          username: auth.info.name,
+                          password: password,
+                          password_confirmation: password)
+        user.create_user_profile(fullname: @user.username)
+      end
+    end
+    user
   end
 
   def self.search(user)

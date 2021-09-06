@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users,
+              path: "",
+              controllers: {omniauth_callbacks: "omniauth_callbacks" }
   scope "(:locale)", locale: /en|vi/ do
     root "sessions#new"
     get "/admin",         to: "admin#index"
@@ -8,6 +11,7 @@ Rails.application.routes.draw do
     get "/login",         to: "sessions#new"
     post "/login",        to: "sessions#create"
     delete "/logout",     to: "sessions#destroy"
+    get "/train",         to: "lessons#train"
     get "/signup",        to: "users#new"
     get "/word_summary",  to: "summaries#word_summary"
     get "result_test",    to: "tests#result_test"

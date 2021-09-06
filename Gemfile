@@ -24,6 +24,13 @@ gem "bootstrap-will_paginate", "~> 1.0"
 gem "faker", "~> 2.18"
 gem "config", "~> 3.1"
 gem "active_storage_validations", "~> 0.9.5"
+gem "devise", "~> 4.8"
+gem "omniauth", "~> 2.0", ">= 2.0.4"
+gem "omniauth-google-oauth2", "~> 1.0"
+gem "omniauth-facebook", "~> 8.0"
+gem "omniauth-rails_csrf_protection", "~> 1.0"
+gem "omniauth-twitter", "~> 1.4"
+gem "figaro", "~> 1.2"
 
 group :development, :test do
   
