@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users,
+              path: "",
+              controllers: {omniauth_callbacks: "omniauth_callbacks" }
   scope "(:locale)", locale: /en|vi/ do
     root "sessions#new"
     get "/admin",         to: "admin#index"
