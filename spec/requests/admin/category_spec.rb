@@ -1,12 +1,9 @@
 require "rails_helper"
 RSpec.describe Admin::CategoriesController, type: :request do
-<<<<<<< HEAD
-=======
 
   current_user = User.first_or_create!(username: "leduyvuong", email: "leduyvuong99@gmail.com",
     password: "123456", password_confirmation: "123456", role: 0)
 
->>>>>>> 8b07e19... Admin Categories Controller Test
   let(:valid_attributes) do
     {
       id: 1,
