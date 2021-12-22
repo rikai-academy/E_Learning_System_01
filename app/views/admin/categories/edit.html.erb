@@ -1,6 +1,6 @@
 <%= render "admin/sidebar_admin" %>
 <div class = "col-md-9">
-  <%= form_for(model: [:admin, @category], local: true) do |c|%>
+  <%= form_with(model: [:admin, @category], url: admin_category_path(id: @category.id), method: :patch, local: true) do |c|%>
     <%= render "shared/error_messages",object:  c.object%>
     <%= render "shared/flash_messages" %>
     <div class="col-md-4 ed_profile_img">
